@@ -1,0 +1,13 @@
+{
+  "package_name": "assessment_interfaces",
+  "non_idl_tuples": [
+    "/home/baguette/Documents/CS-AURO/assessment_interfaces:msg/ItemLog.msg",
+    "/home/baguette/Documents/CS-AURO/assessment_interfaces:msg/ItemHolder.msg",
+    "/home/baguette/Documents/CS-AURO/assessment_interfaces:msg/ItemHolders.msg",
+    "/home/baguette/Documents/CS-AURO/assessment_interfaces:msg/Item.msg",
+    "/home/baguette/Documents/CS-AURO/assessment_interfaces:msg/ItemList.msg",
+    "/home/baguette/Documents/CS-AURO/assessment_interfaces:msg/HomeZone.msg",
+    "/home/baguette/Documents/CS-AURO/assessment_interfaces:msg/Robot.msg",
+    "/home/baguette/Documents/CS-AURO/assessment_interfaces:msg/RobotList.msg"
+  ]
+}

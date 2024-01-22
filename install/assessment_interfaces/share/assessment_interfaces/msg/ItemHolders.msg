@@ -1,0 +1,1 @@
+/home/baguette/Documents/CS-AURO/assessment_interfaces/msg/ItemHolders.msg

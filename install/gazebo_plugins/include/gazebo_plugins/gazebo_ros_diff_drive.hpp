@@ -1,0 +1,1 @@
+/home/baguette/Documents/CS-AURO/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_diff_drive.hpp

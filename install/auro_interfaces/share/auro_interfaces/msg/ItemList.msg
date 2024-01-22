@@ -1,0 +1,1 @@
+/home/baguette/Documents/CS-AURO/auro_interfaces/msg/ItemList.msg

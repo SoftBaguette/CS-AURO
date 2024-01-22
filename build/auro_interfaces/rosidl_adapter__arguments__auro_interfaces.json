@@ -1,0 +1,8 @@
+{
+  "package_name": "auro_interfaces",
+  "non_idl_tuples": [
+    "/home/baguette/Documents/CS-AURO/auro_interfaces:msg/StringWithPose.msg",
+    "/home/baguette/Documents/CS-AURO/auro_interfaces:msg/Item.msg",
+    "/home/baguette/Documents/CS-AURO/auro_interfaces:msg/ItemList.msg"
+  ]
+}

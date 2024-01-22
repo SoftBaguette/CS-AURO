@@ -1,0 +1,374 @@
+[0.684s] Invoking command in '/home/baguette/Documents/CS-AURO/build/assessment_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/baguette/Documents/CS-AURO/assessment_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/baguette/Documents/CS-AURO/install/assessment_interfaces
+[3.148s] -- The C compiler identification is GNU 11.4.0
+[3.149s] -- The CXX compiler identification is GNU 11.4.0
+[3.149s] -- Detecting C compiler ABI info
+[3.149s] -- Detecting C compiler ABI info - done
+[3.150s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.150s] -- Detecting C compile features
+[3.150s] -- Detecting C compile features - done
+[3.150s] -- Detecting CXX compiler ABI info
+[3.150s] -- Detecting CXX compiler ABI info - done
+[3.150s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.150s] -- Detecting CXX compile features
+[3.151s] -- Detecting CXX compile features - done
+[3.151s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.151s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[3.151s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.152s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.152s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.152s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.153s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.153s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.153s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.153s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.153s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.153s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.153s] -- Found PythonExtra: .so  
+[3.153s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.153s] -- Added test 'lint_cmake' to check CMake code style
+[3.153s] -- Added test 'xmllint' to check XML markup files
+[3.153s] -- Configuring done
+[3.153s] -- Generating done
+[3.153s] -- Build files have been written to: /home/baguette/Documents/CS-AURO/build/assessment_interfaces
+[3.384s] Invoked command in '/home/baguette/Documents/CS-AURO/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/baguette/Documents/CS-AURO/assessment_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/baguette/Documents/CS-AURO/install/assessment_interfaces
+[3.385s] Invoking command in '/home/baguette/Documents/CS-AURO/build/assessment_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/build/assessment_interfaces -- -j16 -l16
+[3.425s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.466s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.479s] [  2%] Built target ament_cmake_python_symlink_assessment_interfaces
+[3.912s] running egg_info
+[3.914s] creating assessment_interfaces.egg-info
+[3.914s] writing assessment_interfaces.egg-info/PKG-INFO
+[3.914s] writing dependency_links to assessment_interfaces.egg-info/dependency_links.txt
+[3.914s] writing top-level names to assessment_interfaces.egg-info/top_level.txt
+[3.915s] writing manifest file 'assessment_interfaces.egg-info/SOURCES.txt'
+[3.918s] reading manifest file 'assessment_interfaces.egg-info/SOURCES.txt'
+[3.919s] writing manifest file 'assessment_interfaces.egg-info/SOURCES.txt'
+[3.983s] [  2%] Built target ament_cmake_python_build_assessment_interfaces_egg
+[4.723s] [  2%] Built target assessment_interfaces__cpp
+[4.793s] [  3%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.825s] [  4%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.835s] [  5%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/item_log__functions.c.o[0m
+[4.835s] [  6%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.851s] [  8%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/item_holder__functions.c.o[0m
+[4.851s] [  9%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/item_holders__functions.c.o[0m
+[4.859s] [ 10%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/item__functions.c.o[0m
+[4.889s] [ 11%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/item_list__functions.c.o[0m
+[4.978s] [ 13%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/robot_list__functions.c.o[0m
+[4.978s] [ 13%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/home_zone__functions.c.o[0m
+[4.978s] [ 14%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/robot__functions.c.o[0m
+[5.177s] [ 16%] [32m[1mLinking C shared library libassessment_interfaces__rosidl_generator_c.so[0m
+[5.337s] [ 16%] Built target assessment_interfaces__rosidl_generator_c
+[5.351s] [ 17%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.357s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.368s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.600s] [ 20%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/item_log__type_support.cpp.o[0m
+[5.600s] [ 22%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/item_holder__type_support.cpp.o[0m
+[5.600s] [ 22%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/item__type_support.cpp.o[0m
+[5.600s] [ 24%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/item_holders__type_support.cpp.o[0m
+[5.633s] [ 25%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/item_list__type_support.cpp.o[0m
+[5.633s] [ 26%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/home_zone__type_support.cpp.o[0m
+[5.633s] [ 27%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/robot__type_support.cpp.o[0m
+[5.633s] [ 28%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/item_log__type_support.cpp.o[0m
+[5.633s] [ 29%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/robot_list__type_support.cpp.o[0m
+[5.644s] [ 31%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/item_holder__type_support.cpp.o[0m
+[5.647s] [ 32%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/item_log__type_support.cpp.o[0m
+[5.658s] [ 33%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/item_holder__type_support.cpp.o[0m
+[5.663s] [ 34%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/item_holders__type_support.cpp.o[0m
+[5.999s] [ 35%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/item_holders__type_support.cpp.o[0m
+[6.071s] [ 36%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/item_log__type_support.cpp.o[0m
+[6.103s] [ 37%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/item__type_support.cpp.o[0m
+[6.120s] [ 39%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/item_list__type_support.cpp.o[0m
+[6.131s] [ 40%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/home_zone__type_support.cpp.o[0m
+[6.135s] [ 41%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/item_holder__type_support.cpp.o[0m
+[6.142s] [ 42%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/robot__type_support.cpp.o[0m
+[6.157s] [ 43%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/item__type_support.cpp.o[0m
+[6.174s] [ 44%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/item_holders__type_support.cpp.o[0m
+[6.182s] [ 45%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/robot_list__type_support.cpp.o[0m
+[6.187s] [ 47%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/item__type_support.cpp.o[0m
+[6.206s] [ 48%] [32m[1mLinking CXX shared library libassessment_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.207s] [ 49%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/item_list__type_support.cpp.o[0m
+[6.214s] [ 50%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/home_zone__type_support.cpp.o[0m
+[6.235s] [ 51%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/item_list__type_support.cpp.o[0m
+[6.241s] [ 52%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/home_zone__type_support.cpp.o[0m
+[6.253s] [ 54%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/robot__type_support.cpp.o[0m
+[6.266s] [ 55%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/robot__type_support.cpp.o[0m
+[6.276s] [ 56%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item_log__type_support_c.cpp.o[0m
+[6.287s] [ 57%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item_holder__type_support_c.cpp.o[0m
+[6.300s] [ 58%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item_holders__type_support_c.cpp.o[0m
+[6.321s] [ 59%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/robot_list__type_support.cpp.o[0m
+[6.333s] [ 60%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/item_log__type_support.c.o[0m
+[6.353s] [ 62%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/robot_list__type_support.cpp.o[0m
+[6.378s] [ 63%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/item_holder__type_support.c.o[0m
+[6.383s] [ 63%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_cpp
+[6.410s] [ 64%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/item__type_support.c.o[0m
+[6.419s] [ 65%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/item_holders__type_support.c.o[0m
+[6.423s] [ 66%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/item_list__type_support.c.o[0m
+[6.440s] [ 67%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/home_zone__type_support.c.o[0m
+[6.449s] [ 68%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/robot__type_support.c.o[0m
+[6.451s] [ 70%] [32m[1mLinking CXX shared library libassessment_interfaces__rosidl_typesupport_c.so[0m
+[6.467s] [ 71%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/robot_list__type_support.c.o[0m
+[6.471s] [ 72%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item__type_support_c.cpp.o[0m
+[6.485s] [ 73%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item_list__type_support_c.cpp.o[0m
+[6.487s] [ 74%] [32m[1mLinking CXX shared library libassessment_interfaces__rosidl_typesupport_cpp.so[0m
+[6.487s] [ 75%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/home_zone__type_support_c.cpp.o[0m
+[6.502s] [ 77%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/robot__type_support_c.cpp.o[0m
+[6.519s] [ 78%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/robot_list__type_support_c.cpp.o[0m
+[6.522s] [ 78%] Built target assessment_interfaces__rosidl_typesupport_c
+[6.527s] [ 79%] [32m[1mLinking C shared library libassessment_interfaces__rosidl_typesupport_introspection_c.so[0m
+[6.567s] [ 79%] Built target assessment_interfaces__rosidl_typesupport_cpp
+[6.600s] [ 79%] Built target assessment_interfaces__rosidl_typesupport_introspection_c
+[6.777s] [ 80%] [32m[1mLinking CXX shared library libassessment_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[6.850s] [ 80%] Built target assessment_interfaces__rosidl_typesupport_introspection_cpp
+[6.906s] [ 81%] [32m[1mLinking CXX shared library libassessment_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[6.970s] [ 81%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_c
+[6.992s] [ 81%] Built target assessment_interfaces
+[7.009s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.563s] [ 82%] Built target assessment_interfaces__py
+[7.584s] [ 86%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_item_list_s.c.o[0m
+[7.584s] [ 86%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_item_s.c.o[0m
+[7.584s] [ 86%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_item_holders_s.c.o[0m
+[7.584s] [ 87%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_home_zone_s.c.o[0m
+[7.585s] [ 88%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_item_log_s.c.o[0m
+[7.586s] [ 89%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_item_holder_s.c.o[0m
+[7.586s] [ 90%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_robot_s.c.o[0m
+[7.587s] [ 91%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_robot_list_s.c.o[0m
+[7.693s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/assessment_interfaces/libassessment_interfaces__rosidl_generator_py.so[0m
+[7.730s] [ 93%] Built target assessment_interfaces__rosidl_generator_py
+[7.749s] [ 95%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.749s] [ 95%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.749s] [ 96%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[7.828s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.829s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.833s] [100%] [32m[1mLinking C shared library rosidl_generator_py/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.858s] [100%] Built target assessment_interfaces__rosidl_typesupport_c__pyext
+[7.858s] [100%] Built target assessment_interfaces__rosidl_typesupport_introspection_c__pyext
+[7.864s] [100%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[7.878s] Invoked command in '/home/baguette/Documents/CS-AURO/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/build/assessment_interfaces -- -j16 -l16
+[8.136s] Invoking command in '/home/baguette/Documents/CS-AURO/build/assessment_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/CS-AURO/build/assessment_interfaces
+[8.144s] -- Install configuration: ""
+[8.145s] -- Execute custom install script
+[8.145s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/ament_index/resource_index/rosidl_interfaces/assessment_interfaces
+[8.154s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__functions.h
+[8.162s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__struct.h
+[8.169s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__type_support.h
+[8.179s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__functions.h
+[8.187s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__struct.h
+[8.195s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__type_support.h
+[8.204s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__functions.h
+[8.212s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__struct.h
+[8.220s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__type_support.h
+[8.229s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__functions.h
+[8.237s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__struct.h
+[8.244s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__type_support.h
+[8.253s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__functions.h
+[8.260s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__struct.h
+[8.269s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__type_support.h
+[8.277s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__functions.h
+[8.284s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__struct.h
+[8.292s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__type_support.h
+[8.301s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__functions.h
+[8.308s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__struct.h
+[8.317s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__type_support.h
+[8.325s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__functions.h
+[8.332s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__struct.h
+[8.340s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__type_support.h
+[8.349s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/home_zone.h
+[8.357s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item.h
+[8.364s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holder.h
+[8.373s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holders.h
+[8.380s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_list.h
+[8.388s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_log.h
+[8.396s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot.h
+[8.404s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot_list.h
+[8.412s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_generator_c__visibility_control.h
+[8.420s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/environment/library_path.sh
+[8.429s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/environment/library_path.dsv
+[8.437s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__rosidl_typesupport_fastrtps_c.h
+[8.444s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_c.h
+[8.453s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_fastrtps_c.h
+[8.462s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_fastrtps_c.h
+[8.470s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_c.h
+[8.479s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_fastrtps_c.h
+[8.488s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_fastrtps_c.h
+[8.496s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_fastrtps_c.h
+[8.504s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.513s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__rosidl_typesupport_introspection_c.h
+[8.520s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_introspection_c.h
+[8.528s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_introspection_c.h
+[8.537s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_introspection_c.h
+[8.545s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_c.h
+[8.554s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_introspection_c.h
+[8.562s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_introspection_c.h
+[8.570s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_introspection_c.h
+[8.579s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.588s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__builder.hpp
+[8.596s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__struct.hpp
+[8.603s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__traits.hpp
+[8.610s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__builder.hpp
+[8.619s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__struct.hpp
+[8.627s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__traits.hpp
+[8.635s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__builder.hpp
+[8.644s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__struct.hpp
+[8.652s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__traits.hpp
+[8.661s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__builder.hpp
+[8.668s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__struct.hpp
+[8.676s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__traits.hpp
+[8.684s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__builder.hpp
+[8.693s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__struct.hpp
+[8.701s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__traits.hpp
+[8.709s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__builder.hpp
+[8.716s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__struct.hpp
+[8.724s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__traits.hpp
+[8.732s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__builder.hpp
+[8.741s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__struct.hpp
+[8.749s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__traits.hpp
+[8.757s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__builder.hpp
+[8.766s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__struct.hpp
+[8.774s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__traits.hpp
+[8.783s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/home_zone.hpp
+[8.791s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item.hpp
+[8.800s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holder.hpp
+[8.808s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holders.hpp
+[8.816s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_list.hpp
+[8.825s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_log.hpp
+[8.833s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot.hpp
+[8.841s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot_list.hpp
+[8.851s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__rosidl_typesupport_fastrtps_cpp.hpp
+[8.859s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_cpp.hpp
+[8.867s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_fastrtps_cpp.hpp
+[8.876s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_fastrtps_cpp.hpp
+[8.884s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_cpp.hpp
+[8.892s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_fastrtps_cpp.hpp
+[8.901s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_fastrtps_cpp.hpp
+[8.908s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_fastrtps_cpp.hpp
+[8.916s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.925s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__rosidl_typesupport_introspection_cpp.hpp
+[8.933s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_introspection_cpp.hpp
+[8.942s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_introspection_cpp.hpp
+[8.950s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_introspection_cpp.hpp
+[8.958s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_cpp.hpp
+[8.966s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_introspection_cpp.hpp
+[8.975s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_introspection_cpp.hpp
+[8.983s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_introspection_cpp.hpp
+[8.992s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/environment/pythonpath.sh
+[9.000s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/environment/pythonpath.dsv
+[9.009s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[9.017s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[9.024s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[9.032s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[9.041s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/__init__.py
+[9.049s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_c.c
+[9.057s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.064s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[9.072s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.080s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.088s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.096s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/libassessment_interfaces__rosidl_generator_py.so
+[9.105s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/__init__.py
+[9.113s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_home_zone.py
+[9.121s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_home_zone_s.c
+[9.129s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item.py
+[9.137s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holder.py
+[9.145s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holder_s.c
+[9.152s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holders.py
+[9.160s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holders_s.c
+[9.168s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_list.py
+[9.177s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_list_s.c
+[9.185s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_log.py
+[9.192s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_log_s.c
+[9.200s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_s.c
+[9.208s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot.py
+[9.216s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_list.py
+[9.224s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_list_s.c
+[9.233s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_s.c
+[9.242s] -- Up-to-date symlink: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.242s] -- Up-to-date symlink: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.242s] -- Up-to-date symlink: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.242s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/ItemLog.idl
+[9.251s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolder.idl
+[9.259s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolders.idl
+[9.268s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/Item.idl
+[9.276s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/ItemList.idl
+[9.284s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/HomeZone.idl
+[9.292s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/Robot.idl
+[9.300s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/RobotList.idl
+[9.308s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/ItemLog.msg
+[9.317s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolder.msg
+[9.325s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolders.msg
+[9.333s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/Item.msg
+[9.341s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/ItemList.msg
+[9.348s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/HomeZone.msg
+[9.356s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/Robot.msg
+[9.364s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/msg/RobotList.msg
+[9.372s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/ament_index/resource_index/package_run_dependencies/assessment_interfaces
+[9.380s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/ament_index/resource_index/parent_prefix_path/assessment_interfaces
+[9.388s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/environment/ament_prefix_path.sh
+[9.396s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/environment/ament_prefix_path.dsv
+[9.405s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/environment/path.sh
+[9.413s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/environment/path.dsv
+[9.421s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/local_setup.bash
+[9.429s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/local_setup.sh
+[9.436s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/local_setup.zsh
+[9.445s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/local_setup.dsv
+[9.453s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.dsv
+[9.461s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/ament_index/resource_index/packages/assessment_interfaces
+[9.470s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/rosidl_cmake-extras.cmake
+[9.478s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.486s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[9.494s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[9.502s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.511s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.519s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.527s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfacesConfig.cmake
+[9.535s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfacesConfig-version.cmake
+[9.544s] -- Symlinking: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.xml
+[9.553s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_generator_c.so
+[9.553s] -- Set runtime path of "/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_generator_c.so" to ""
+[9.553s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_fastrtps_c.so
+[9.554s] -- Set runtime path of "/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[9.554s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_introspection_c.so
+[9.554s] -- Set runtime path of "/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[9.554s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_c.so
+[9.554s] -- Set runtime path of "/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_c.so" to ""
+[9.555s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[9.555s] -- Set runtime path of "/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.555s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_introspection_cpp.so
+[9.556s] -- Set runtime path of "/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[9.556s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_cpp.so
+[9.556s] -- Set runtime path of "/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_cpp.so" to ""
+[9.583s] Listing '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces'...
+[9.583s] Compiling '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/__init__.py'...
+[9.583s] Listing '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg'...
+[9.583s] Compiling '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/__init__.py'...
+[9.583s] Compiling '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_home_zone.py'...
+[9.584s] Compiling '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item.py'...
+[9.584s] Compiling '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holder.py'...
+[9.584s] Compiling '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holders.py'...
+[9.584s] Compiling '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_list.py'...
+[9.584s] Compiling '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_log.py'...
+[9.584s] Compiling '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot.py'...
+[9.584s] Compiling '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_list.py'...
+[9.586s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_generator_py.so
+[9.587s] -- Set runtime path of "/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_generator_py.so" to ""
+[9.587s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_cExport.cmake
+[9.587s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_cExport-noconfig.cmake
+[9.587s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[9.587s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.587s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[9.588s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.588s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cExport.cmake
+[9.588s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[9.588s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_cppExport.cmake
+[9.588s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.588s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.588s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[9.588s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.588s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cppExport.cmake
+[9.588s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[9.589s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_pyExport.cmake
+[9.589s] -- Installing: /home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[9.591s] Invoked command in '/home/baguette/Documents/CS-AURO/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/CS-AURO/build/assessment_interfaces

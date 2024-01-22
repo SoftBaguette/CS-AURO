@@ -1,0 +1,1 @@
+/home/baguette/Documents/CS-AURO/build/solution_interfaces/ament_cmake_python/solution_interfaces/solution_interfaces.egg-info/SOURCES.txt

@@ -1,0 +1,57 @@
+[3.597s] Invoking command in '/home/baguette/Documents/CS-AURO/build/week_8': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_8/prefix_override:/home/baguette/Documents/CS-AURO/install/week_8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_8/build --no-deps install_data
+[4.287s] running develop
+[4.287s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.288s]   warnings.warn(
+[4.288s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.288s]   warnings.warn(
+[4.556s] running egg_info
+[4.569s] creating week_8.egg-info
+[4.569s] writing week_8.egg-info/PKG-INFO
+[4.569s] writing dependency_links to week_8.egg-info/dependency_links.txt
+[4.569s] writing entry points to week_8.egg-info/entry_points.txt
+[4.569s] writing requirements to week_8.egg-info/requires.txt
+[4.569s] writing top-level names to week_8.egg-info/top_level.txt
+[4.570s] writing manifest file 'week_8.egg-info/SOURCES.txt'
+[4.570s] reading manifest file 'week_8.egg-info/SOURCES.txt'
+[4.570s] writing manifest file 'week_8.egg-info/SOURCES.txt'
+[4.570s] running build_ext
+[4.570s] Creating /home/baguette/Documents/CS-AURO/install/week_8/lib/python3.10/site-packages/week-8.egg-link (link to .)
+[4.570s] Installing autonomous_navigation script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[4.570s] Installing autonomous_navigation_multithreaded script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[4.570s] Installing joint_state_republisher script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[4.570s] Installing path_publisher script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[4.570s] Installing robot_controller script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[4.570s] Installing simple_commander script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[4.570s] 
+[4.570s] Installed /home/baguette/Documents/CS-AURO/build/week_8
+[4.571s] running install_data
+[4.571s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/ament_index
+[4.571s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/ament_index/resource_index
+[4.571s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/ament_index/resource_index/packages
+[4.571s] copying resource/week_8 -> /home/baguette/Documents/CS-AURO/install/week_8/share/ament_index/resource_index/packages
+[4.571s] copying package.xml -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8
+[4.571s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/models
+[4.571s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/models/turtlebot3_waffle_pi_edited
+[4.571s] copying models/turtlebot3_waffle_pi_edited/model.sdf -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/models/turtlebot3_waffle_pi_edited
+[4.571s] copying models/turtlebot3_waffle_pi_edited/model.config -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/models/turtlebot3_waffle_pi_edited
+[4.571s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/models/turtlebot3_waffle_pi_odom
+[4.571s] copying models/turtlebot3_waffle_pi_odom/model.sdf -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/models/turtlebot3_waffle_pi_odom
+[4.571s] copying models/turtlebot3_waffle_pi_odom/model.config -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/models/turtlebot3_waffle_pi_odom
+[4.571s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/models/turtlebot3_world_auro
+[4.572s] copying models/turtlebot3_world_auro/model.sdf -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/models/turtlebot3_world_auro
+[4.572s] copying models/turtlebot3_world_auro/model.config -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/models/turtlebot3_world_auro
+[4.572s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/launch
+[4.572s] copying launch/week_8_launch.py -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/launch/
+[4.572s] copying launch/week_8_nav2_launch.py -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/launch/
+[4.572s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/worlds
+[4.572s] copying worlds/turtlebot3_world_empty.world -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/worlds/
+[4.572s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/rviz
+[4.572s] copying rviz/paths.rviz -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/rviz/
+[4.572s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/urdf
+[4.572s] copying urdf/true_turtlebot3_waffle_pi.urdf -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/urdf/
+[4.572s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/maps
+[4.573s] copying maps/auro_map.yaml -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/maps/
+[4.573s] copying maps/auro_map.pgm -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/maps/
+[4.573s] creating /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/params
+[4.573s] copying params/nav2_params.yaml -> /home/baguette/Documents/CS-AURO/install/week_8/share/week_8/params/
+[5.323s] Invoked command in '/home/baguette/Documents/CS-AURO/build/week_8' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_8/prefix_override:/home/baguette/Documents/CS-AURO/install/week_8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_8/build --no-deps install_data

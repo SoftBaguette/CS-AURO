@@ -1,0 +1,1 @@
+/home/baguette/Documents/CS-AURO/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__struct.h

@@ -1,0 +1,1 @@
+/home/baguette/Documents/CS-AURO/build/solution_interfaces/rosidl_generator_py/solution_interfaces/msg/_example.py

@@ -1,0 +1,1 @@
+/home/baguette/Documents/CS-AURO/build/solution_interfaces/rosidl_generator_cpp/solution_interfaces/msg/example.hpp

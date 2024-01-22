@@ -1,0 +1,1 @@
+/home/baguette/Documents/CS-AURO/build/assessment_interfaces/rosidl_generator_cpp/assessment_interfaces/msg/detail/robot__struct.hpp

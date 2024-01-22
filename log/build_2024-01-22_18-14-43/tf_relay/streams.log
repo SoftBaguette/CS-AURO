@@ -1,0 +1,28 @@
+[3.728s] Invoking command in '/home/baguette/Documents/CS-AURO/build/tf_relay': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/tf_relay/prefix_override:/home/baguette/Documents/CS-AURO/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/tf_relay/build --no-deps install_data
+[4.117s] running develop
+[4.117s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.117s]   warnings.warn(
+[4.126s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.126s]   warnings.warn(
+[4.514s] running egg_info
+[4.515s] creating tf_relay.egg-info
+[4.515s] writing tf_relay.egg-info/PKG-INFO
+[4.515s] writing dependency_links to tf_relay.egg-info/dependency_links.txt
+[4.515s] writing entry points to tf_relay.egg-info/entry_points.txt
+[4.515s] writing requirements to tf_relay.egg-info/requires.txt
+[4.516s] writing top-level names to tf_relay.egg-info/top_level.txt
+[4.516s] writing manifest file 'tf_relay.egg-info/SOURCES.txt'
+[4.518s] reading manifest file 'tf_relay.egg-info/SOURCES.txt'
+[4.528s] writing manifest file 'tf_relay.egg-info/SOURCES.txt'
+[4.528s] running build_ext
+[4.528s] Creating /home/baguette/Documents/CS-AURO/install/tf_relay/lib/python3.10/site-packages/tf-relay.egg-link (link to .)
+[4.528s] Installing relay script to /home/baguette/Documents/CS-AURO/install/tf_relay/lib/tf_relay
+[4.528s] 
+[4.528s] Installed /home/baguette/Documents/CS-AURO/build/tf_relay
+[4.528s] running install_data
+[4.528s] creating /home/baguette/Documents/CS-AURO/install/tf_relay/share/ament_index
+[4.528s] creating /home/baguette/Documents/CS-AURO/install/tf_relay/share/ament_index/resource_index
+[4.528s] creating /home/baguette/Documents/CS-AURO/install/tf_relay/share/ament_index/resource_index/packages
+[4.528s] copying resource/tf_relay -> /home/baguette/Documents/CS-AURO/install/tf_relay/share/ament_index/resource_index/packages
+[4.528s] copying package.xml -> /home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay
+[4.843s] Invoked command in '/home/baguette/Documents/CS-AURO/build/tf_relay' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/tf_relay/prefix_override:/home/baguette/Documents/CS-AURO/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/tf_relay/build --no-deps install_data

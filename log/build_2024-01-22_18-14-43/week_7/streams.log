@@ -1,0 +1,36 @@
+[3.620s] Invoking command in '/home/baguette/Documents/CS-AURO/build/week_7': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_7/prefix_override:/home/baguette/Documents/CS-AURO/install/week_7/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_7/build --no-deps install_data
+[4.337s] running develop
+[4.338s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.338s]   warnings.warn(
+[4.338s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.338s]   warnings.warn(
+[4.463s] running egg_info
+[4.463s] creating week_7.egg-info
+[4.463s] writing week_7.egg-info/PKG-INFO
+[4.463s] writing dependency_links to week_7.egg-info/dependency_links.txt
+[4.463s] writing entry points to week_7.egg-info/entry_points.txt
+[4.463s] writing requirements to week_7.egg-info/requires.txt
+[4.463s] writing top-level names to week_7.egg-info/top_level.txt
+[4.463s] writing manifest file 'week_7.egg-info/SOURCES.txt'
+[4.463s] reading manifest file 'week_7.egg-info/SOURCES.txt'
+[4.464s] writing manifest file 'week_7.egg-info/SOURCES.txt'
+[4.465s] running build_ext
+[4.465s] Creating /home/baguette/Documents/CS-AURO/install/week_7/lib/python3.10/site-packages/week-7.egg-link (link to .)
+[4.467s] 
+[4.467s] Installed /home/baguette/Documents/CS-AURO/build/week_7
+[4.467s] running install_data
+[4.467s] creating /home/baguette/Documents/CS-AURO/install/week_7/share/ament_index
+[4.467s] creating /home/baguette/Documents/CS-AURO/install/week_7/share/ament_index/resource_index
+[4.467s] creating /home/baguette/Documents/CS-AURO/install/week_7/share/ament_index/resource_index/packages
+[4.467s] copying resource/week_7 -> /home/baguette/Documents/CS-AURO/install/week_7/share/ament_index/resource_index/packages
+[4.467s] copying package.xml -> /home/baguette/Documents/CS-AURO/install/week_7/share/week_7
+[4.468s] creating /home/baguette/Documents/CS-AURO/install/week_7/share/week_7/models
+[4.468s] creating /home/baguette/Documents/CS-AURO/install/week_7/share/week_7/models/turtlebot3_world_auro
+[4.468s] copying models/turtlebot3_world_auro/model.sdf -> /home/baguette/Documents/CS-AURO/install/week_7/share/week_7/models/turtlebot3_world_auro
+[4.468s] copying models/turtlebot3_world_auro/model.config -> /home/baguette/Documents/CS-AURO/install/week_7/share/week_7/models/turtlebot3_world_auro
+[4.468s] creating /home/baguette/Documents/CS-AURO/install/week_7/share/week_7/launch
+[4.468s] copying launch/turtlebot3_world_auro.launch.py -> /home/baguette/Documents/CS-AURO/install/week_7/share/week_7/launch/
+[4.468s] creating /home/baguette/Documents/CS-AURO/install/week_7/share/week_7/worlds
+[4.468s] copying worlds/turtlebot3_world_auro.world -> /home/baguette/Documents/CS-AURO/install/week_7/share/week_7/worlds/
+[4.468s] copying worlds/turtlebot3_world_empty.world -> /home/baguette/Documents/CS-AURO/install/week_7/share/week_7/worlds/
+[5.050s] Invoked command in '/home/baguette/Documents/CS-AURO/build/week_7' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_7/prefix_override:/home/baguette/Documents/CS-AURO/install/week_7/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_7/build --no-deps install_data
