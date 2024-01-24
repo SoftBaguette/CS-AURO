@@ -1,0 +1,23 @@
+[3.500s] Invoking command in '/home/baguette/Documents/CS-AURO/build/week_3': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_3/prefix_override:/home/baguette/Documents/CS-AURO/install/week_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_3/build --no-deps install_data
+[3.842s] running develop
+[3.843s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.843s]   warnings.warn(
+[3.844s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.844s]   warnings.warn(
+[4.097s] running egg_info
+[4.097s] writing week_3.egg-info/PKG-INFO
+[4.097s] writing dependency_links to week_3.egg-info/dependency_links.txt
+[4.097s] writing entry points to week_3.egg-info/entry_points.txt
+[4.098s] writing requirements to week_3.egg-info/requires.txt
+[4.098s] writing top-level names to week_3.egg-info/top_level.txt
+[4.099s] reading manifest file 'week_3.egg-info/SOURCES.txt'
+[4.100s] writing manifest file 'week_3.egg-info/SOURCES.txt'
+[4.101s] running build_ext
+[4.101s] Creating /home/baguette/Documents/CS-AURO/install/week_3/lib/python3.10/site-packages/week-3.egg-link (link to .)
+[4.101s] Installing rviz_text_marker script to /home/baguette/Documents/CS-AURO/install/week_3/lib/week_3
+[4.101s] Installing turtlebot3_fsm script to /home/baguette/Documents/CS-AURO/install/week_3/lib/week_3
+[4.102s] Installing turtlebot3_random_walk script to /home/baguette/Documents/CS-AURO/install/week_3/lib/week_3
+[4.102s] 
+[4.102s] Installed /home/baguette/Documents/CS-AURO/build/week_3
+[4.102s] running install_data
+[4.467s] Invoked command in '/home/baguette/Documents/CS-AURO/build/week_3' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_3/prefix_override:/home/baguette/Documents/CS-AURO/install/week_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_3/build --no-deps install_data

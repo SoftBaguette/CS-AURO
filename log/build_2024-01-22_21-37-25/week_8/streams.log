@@ -1,0 +1,26 @@
+[3.398s] Invoking command in '/home/baguette/Documents/CS-AURO/build/week_8': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_8/prefix_override:/home/baguette/Documents/CS-AURO/install/week_8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_8/build --no-deps install_data
+[3.736s] running develop
+[3.736s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.736s]   warnings.warn(
+[3.737s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.737s]   warnings.warn(
+[3.949s] running egg_info
+[3.949s] writing week_8.egg-info/PKG-INFO
+[3.949s] writing dependency_links to week_8.egg-info/dependency_links.txt
+[3.949s] writing entry points to week_8.egg-info/entry_points.txt
+[3.949s] writing requirements to week_8.egg-info/requires.txt
+[3.949s] writing top-level names to week_8.egg-info/top_level.txt
+[3.951s] reading manifest file 'week_8.egg-info/SOURCES.txt'
+[3.952s] writing manifest file 'week_8.egg-info/SOURCES.txt'
+[3.953s] running build_ext
+[3.953s] Creating /home/baguette/Documents/CS-AURO/install/week_8/lib/python3.10/site-packages/week-8.egg-link (link to .)
+[3.954s] Installing autonomous_navigation script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[3.954s] Installing autonomous_navigation_multithreaded script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[3.954s] Installing joint_state_republisher script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[3.954s] Installing path_publisher script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[3.955s] Installing robot_controller script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[3.955s] Installing simple_commander script to /home/baguette/Documents/CS-AURO/install/week_8/lib/week_8
+[3.955s] 
+[3.956s] Installed /home/baguette/Documents/CS-AURO/build/week_8
+[3.956s] running install_data
+[4.162s] Invoked command in '/home/baguette/Documents/CS-AURO/build/week_8' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_8/prefix_override:/home/baguette/Documents/CS-AURO/install/week_8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_8/build --no-deps install_data

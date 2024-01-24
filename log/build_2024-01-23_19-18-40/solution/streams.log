@@ -1,0 +1,22 @@
+[3.733s] Invoking command in '/home/baguette/Documents/CS-AURO/build/solution': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/solution/prefix_override:/home/baguette/Documents/CS-AURO/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/solution/build --no-deps install_data
+[4.014s] running develop
+[4.014s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.014s]   warnings.warn(
+[4.015s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.015s]   warnings.warn(
+[4.258s] running egg_info
+[4.258s] writing solution.egg-info/PKG-INFO
+[4.259s] writing dependency_links to solution.egg-info/dependency_links.txt
+[4.259s] writing entry points to solution.egg-info/entry_points.txt
+[4.259s] writing requirements to solution.egg-info/requires.txt
+[4.259s] writing top-level names to solution.egg-info/top_level.txt
+[4.261s] reading manifest file 'solution.egg-info/SOURCES.txt'
+[4.262s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[4.263s] running build_ext
+[4.263s] Creating /home/baguette/Documents/CS-AURO/install/solution/lib/python3.10/site-packages/solution.egg-link (link to .)
+[4.264s] Installing data_logger script to /home/baguette/Documents/CS-AURO/install/solution/lib/solution
+[4.264s] Installing robot_controller script to /home/baguette/Documents/CS-AURO/install/solution/lib/solution
+[4.264s] 
+[4.264s] Installed /home/baguette/Documents/CS-AURO/build/solution
+[4.265s] running install_data
+[4.688s] Invoked command in '/home/baguette/Documents/CS-AURO/build/solution' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/solution/prefix_override:/home/baguette/Documents/CS-AURO/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/solution/build --no-deps install_data

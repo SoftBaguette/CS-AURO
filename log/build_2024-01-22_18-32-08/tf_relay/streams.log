@@ -1,0 +1,21 @@
+[3.656s] Invoking command in '/home/baguette/Documents/CS-AURO/build/tf_relay': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/tf_relay/prefix_override:/home/baguette/Documents/CS-AURO/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/tf_relay/build --no-deps install_data
+[3.993s] running develop
+[3.994s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.994s]   warnings.warn(
+[3.995s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.995s]   warnings.warn(
+[4.247s] running egg_info
+[4.248s] writing tf_relay.egg-info/PKG-INFO
+[4.248s] writing dependency_links to tf_relay.egg-info/dependency_links.txt
+[4.248s] writing entry points to tf_relay.egg-info/entry_points.txt
+[4.248s] writing requirements to tf_relay.egg-info/requires.txt
+[4.248s] writing top-level names to tf_relay.egg-info/top_level.txt
+[4.249s] reading manifest file 'tf_relay.egg-info/SOURCES.txt'
+[4.250s] writing manifest file 'tf_relay.egg-info/SOURCES.txt'
+[4.251s] running build_ext
+[4.251s] Creating /home/baguette/Documents/CS-AURO/install/tf_relay/lib/python3.10/site-packages/tf-relay.egg-link (link to .)
+[4.252s] Installing relay script to /home/baguette/Documents/CS-AURO/install/tf_relay/lib/tf_relay
+[4.253s] 
+[4.253s] Installed /home/baguette/Documents/CS-AURO/build/tf_relay
+[4.253s] running install_data
+[4.462s] Invoked command in '/home/baguette/Documents/CS-AURO/build/tf_relay' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/tf_relay/prefix_override:/home/baguette/Documents/CS-AURO/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/tf_relay/build --no-deps install_data

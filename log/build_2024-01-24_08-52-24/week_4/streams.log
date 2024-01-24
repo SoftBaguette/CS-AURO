@@ -1,0 +1,21 @@
+[4.357s] Invoking command in '/home/baguette/Documents/CS-AURO/build/week_4': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_4/prefix_override:/home/baguette/Documents/CS-AURO/install/week_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_4/build --no-deps install_data
+[4.732s] running develop
+[4.732s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.732s]   warnings.warn(
+[4.733s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.733s]   warnings.warn(
+[4.998s] running egg_info
+[4.999s] writing week_4.egg-info/PKG-INFO
+[4.999s] writing dependency_links to week_4.egg-info/dependency_links.txt
+[5.000s] writing entry points to week_4.egg-info/entry_points.txt
+[5.000s] writing requirements to week_4.egg-info/requires.txt
+[5.000s] writing top-level names to week_4.egg-info/top_level.txt
+[5.001s] reading manifest file 'week_4.egg-info/SOURCES.txt'
+[5.002s] writing manifest file 'week_4.egg-info/SOURCES.txt'
+[5.003s] running build_ext
+[5.003s] Creating /home/baguette/Documents/CS-AURO/install/week_4/lib/python3.10/site-packages/week-4.egg-link (link to .)
+[5.004s] Installing robot_controller script to /home/baguette/Documents/CS-AURO/install/week_4/lib/week_4
+[5.004s] 
+[5.005s] Installed /home/baguette/Documents/CS-AURO/build/week_4
+[5.005s] running install_data
+[5.451s] Invoked command in '/home/baguette/Documents/CS-AURO/build/week_4' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_4/prefix_override:/home/baguette/Documents/CS-AURO/install/week_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_4/build --no-deps install_data

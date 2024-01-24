@@ -1,0 +1,21 @@
+[3.529s] Invoking command in '/home/baguette/Documents/CS-AURO/build/week_2': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_2/prefix_override:/home/baguette/Documents/CS-AURO/install/week_2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_2/build --no-deps install_data
+[3.861s] running develop
+[3.862s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.862s]   warnings.warn(
+[3.863s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.863s]   warnings.warn(
+[4.113s] running egg_info
+[4.113s] writing week_2.egg-info/PKG-INFO
+[4.114s] writing dependency_links to week_2.egg-info/dependency_links.txt
+[4.114s] writing entry points to week_2.egg-info/entry_points.txt
+[4.114s] writing requirements to week_2.egg-info/requires.txt
+[4.115s] writing top-level names to week_2.egg-info/top_level.txt
+[4.116s] reading manifest file 'week_2.egg-info/SOURCES.txt'
+[4.116s] writing manifest file 'week_2.egg-info/SOURCES.txt'
+[4.118s] running build_ext
+[4.118s] Creating /home/baguette/Documents/CS-AURO/install/week_2/lib/python3.10/site-packages/week-2.egg-link (link to .)
+[4.119s] Installing turtlebot3_drive_python script to /home/baguette/Documents/CS-AURO/install/week_2/lib/week_2
+[4.119s] 
+[4.119s] Installed /home/baguette/Documents/CS-AURO/build/week_2
+[4.119s] running install_data
+[4.437s] Invoked command in '/home/baguette/Documents/CS-AURO/build/week_2' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_2/prefix_override:/home/baguette/Documents/CS-AURO/install/week_2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_2/build --no-deps install_data

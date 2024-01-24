@@ -5,6 +5,11 @@ from rclpy.node import Node
 from rclpy.signals import SignalHandlerOptions
 from rclpy.executors import ExternalShutdownException
 
+# States of the Robot
+class State(Enum):
+    FORWARD = 0
+    TURNING = 1
+
 class RobotController(Node):
 
     def __init__(self):
