@@ -1,0 +1,1036 @@
+[1.115s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[1.115s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7feb8fa9d120>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7feb8feefbe0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7feb8feefbe0>>)
+[1.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.151s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/baguette/Documents/CS-AURO'
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extensions ['ignore', 'ignore_ament_install']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extension 'ignore'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extension 'ignore_ament_install'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extensions ['colcon_pkg']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extension 'colcon_pkg'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extensions ['colcon_meta']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extension 'colcon_meta'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extensions ['ros']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extension 'ros'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extensions ['cmake', 'python']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extension 'cmake'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extension 'python'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extensions ['python_setup_py']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(Revision Material) by extension 'python_setup_py'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extensions ['ignore', 'ignore_ament_install']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extension 'ignore'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extension 'ignore_ament_install'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extensions ['colcon_pkg']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extension 'colcon_pkg'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extensions ['colcon_meta']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extension 'colcon_meta'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extensions ['ros']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extension 'ros'
+[1.161s] DEBUG:colcon.colcon_core.package_identification:Package 'assessment' with type 'ros.ament_python' and name 'assessment'
+[1.161s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.161s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extension 'ignore'
+[1.161s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extension 'ignore_ament_install'
+[1.161s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extensions ['colcon_pkg']
+[1.161s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extension 'colcon_pkg'
+[1.161s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extensions ['colcon_meta']
+[1.161s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extension 'colcon_meta'
+[1.161s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extensions ['ros']
+[1.161s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extension 'ros'
+[1.162s] DEBUG:colcon.colcon_core.package_identification:Package 'assessment_interfaces' with type 'ros.ament_cmake' and name 'assessment_interfaces'
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extension 'ignore'
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extension 'ignore_ament_install'
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extensions ['colcon_pkg']
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extension 'colcon_pkg'
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extensions ['colcon_meta']
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extension 'colcon_meta'
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extensions ['ros']
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extension 'ros'
+[1.162s] DEBUG:colcon.colcon_core.package_identification:Package 'auro_interfaces' with type 'ros.ament_cmake' and name 'auro_interfaces'
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extensions ['ignore', 'ignore_ament_install']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extension 'ignore'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extension 'ignore_ament_install'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extensions ['colcon_pkg']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extension 'colcon_pkg'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extensions ['colcon_meta']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extension 'colcon_meta'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extensions ['ros']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extension 'ros'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extensions ['cmake', 'python']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extension 'cmake'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extension 'python'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extensions ['python_setup_py']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs) by extension 'python_setup_py'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs/gazebo_plugins) by extensions ['ignore', 'ignore_ament_install']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs/gazebo_plugins) by extension 'ignore'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs/gazebo_plugins) by extension 'ignore_ament_install'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs/gazebo_plugins) by extensions ['colcon_pkg']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs/gazebo_plugins) by extension 'colcon_pkg'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs/gazebo_plugins) by extensions ['colcon_meta']
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs/gazebo_plugins) by extension 'colcon_meta'
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs/gazebo_plugins) by extensions ['ros']
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(gazebo_ros_pkgs/gazebo_plugins) by extension 'ros'
+[1.165s] DEBUG:colcon.colcon_core.package_identification:Package 'gazebo_ros_pkgs/gazebo_plugins' with type 'ros.ament_cmake' and name 'gazebo_plugins'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extensions ['ignore', 'ignore_ament_install']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extension 'ignore'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extension 'ignore_ament_install'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extensions ['colcon_pkg']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extension 'colcon_pkg'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extensions ['colcon_meta']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extension 'colcon_meta'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extensions ['ros']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extension 'ros'
+[1.165s] DEBUG:colcon.colcon_core.package_identification:Package 'solution' with type 'ros.ament_python' and name 'solution'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(solution_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(solution_interfaces) by extension 'ignore'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(solution_interfaces) by extension 'ignore_ament_install'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(solution_interfaces) by extensions ['colcon_pkg']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(solution_interfaces) by extension 'colcon_pkg'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(solution_interfaces) by extensions ['colcon_meta']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(solution_interfaces) by extension 'colcon_meta'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(solution_interfaces) by extensions ['ros']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(solution_interfaces) by extension 'ros'
+[1.166s] DEBUG:colcon.colcon_core.package_identification:Package 'solution_interfaces' with type 'ros.ament_cmake' and name 'solution_interfaces'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extensions ['ignore', 'ignore_ament_install']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extension 'ignore'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extension 'ignore_ament_install'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extensions ['colcon_pkg']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extension 'colcon_pkg'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extensions ['colcon_meta']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extension 'colcon_meta'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extensions ['ros']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extension 'ros'
+[1.167s] DEBUG:colcon.colcon_core.package_identification:Package 'tf_relay' with type 'ros.ament_python' and name 'tf_relay'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extensions ['ignore', 'ignore_ament_install']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extension 'ignore'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extension 'ignore_ament_install'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extensions ['colcon_pkg']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extension 'colcon_pkg'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extensions ['colcon_meta']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extension 'colcon_meta'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extensions ['ros']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(tf_transformations) by extension 'ros'
+[1.167s] DEBUG:colcon.colcon_core.package_identification:Package 'tf_transformations' with type 'ros.ament_python' and name 'tf_transformations'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(week_1) by extensions ['ignore', 'ignore_ament_install']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(week_1) by extension 'ignore'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(week_1) by extension 'ignore_ament_install'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_1) by extensions ['colcon_pkg']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_1) by extension 'colcon_pkg'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_1) by extensions ['colcon_meta']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_1) by extension 'colcon_meta'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_1) by extensions ['ros']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_1) by extension 'ros'
+[1.168s] DEBUG:colcon.colcon_core.package_identification:Package 'week_1' with type 'ros.ament_python' and name 'week_1'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_2) by extensions ['ignore', 'ignore_ament_install']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_2) by extension 'ignore'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_2) by extension 'ignore_ament_install'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_2) by extensions ['colcon_pkg']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_2) by extension 'colcon_pkg'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_2) by extensions ['colcon_meta']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_2) by extension 'colcon_meta'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_2) by extensions ['ros']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(week_2) by extension 'ros'
+[1.169s] DEBUG:colcon.colcon_core.package_identification:Package 'week_2' with type 'ros.ament_python' and name 'week_2'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_3) by extensions ['ignore', 'ignore_ament_install']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_3) by extension 'ignore'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_3) by extension 'ignore_ament_install'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_3) by extensions ['colcon_pkg']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_3) by extension 'colcon_pkg'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_3) by extensions ['colcon_meta']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_3) by extension 'colcon_meta'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_3) by extensions ['ros']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_3) by extension 'ros'
+[1.169s] DEBUG:colcon.colcon_core.package_identification:Package 'week_3' with type 'ros.ament_python' and name 'week_3'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_4) by extensions ['ignore', 'ignore_ament_install']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_4) by extension 'ignore'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_4) by extension 'ignore_ament_install'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_4) by extensions ['colcon_pkg']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_4) by extension 'colcon_pkg'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_4) by extensions ['colcon_meta']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(week_4) by extension 'colcon_meta'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_4) by extensions ['ros']
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_4) by extension 'ros'
+[1.170s] DEBUG:colcon.colcon_core.package_identification:Package 'week_4' with type 'ros.ament_python' and name 'week_4'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_5) by extensions ['ignore', 'ignore_ament_install']
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_5) by extension 'ignore'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_5) by extension 'ignore_ament_install'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_5) by extensions ['colcon_pkg']
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_5) by extension 'colcon_pkg'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_5) by extensions ['colcon_meta']
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_5) by extension 'colcon_meta'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_5) by extensions ['ros']
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_5) by extension 'ros'
+[1.170s] DEBUG:colcon.colcon_core.package_identification:Package 'week_5' with type 'ros.ament_python' and name 'week_5'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_6) by extensions ['ignore', 'ignore_ament_install']
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(week_6) by extension 'ignore'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_6) by extension 'ignore_ament_install'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_6) by extensions ['colcon_pkg']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_6) by extension 'colcon_pkg'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_6) by extensions ['colcon_meta']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_6) by extension 'colcon_meta'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_6) by extensions ['ros']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_6) by extension 'ros'
+[1.171s] DEBUG:colcon.colcon_core.package_identification:Package 'week_6' with type 'ros.ament_python' and name 'week_6'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_7) by extensions ['ignore', 'ignore_ament_install']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_7) by extension 'ignore'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_7) by extension 'ignore_ament_install'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_7) by extensions ['colcon_pkg']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_7) by extension 'colcon_pkg'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_7) by extensions ['colcon_meta']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_7) by extension 'colcon_meta'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_7) by extensions ['ros']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(week_7) by extension 'ros'
+[1.172s] DEBUG:colcon.colcon_core.package_identification:Package 'week_7' with type 'ros.ament_python' and name 'week_7'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(week_8) by extensions ['ignore', 'ignore_ament_install']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(week_8) by extension 'ignore'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(week_8) by extension 'ignore_ament_install'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(week_8) by extensions ['colcon_pkg']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(week_8) by extension 'colcon_pkg'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(week_8) by extensions ['colcon_meta']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(week_8) by extension 'colcon_meta'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(week_8) by extensions ['ros']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(week_8) by extension 'ros'
+[1.172s] DEBUG:colcon.colcon_core.package_identification:Package 'week_8' with type 'ros.ament_python' and name 'week_8'
+[1.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.209s] INFO:colcon.colcon_metadata.metadata.colcon_pkg:Updating descriptor of package 'gazebo_ros_pkgs/gazebo_plugins' from colcon.pkg: {'dependencies': ['Gazebo']}
+[1.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.279s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 417 installed packages in /opt/ros/humble
+[1.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.342s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'gazebo_plugins' is in: /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding gazebo_plugins
+
+This may be promoted to an error in a future release of colcon-override-check.
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_args' from command line to 'None'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_target' from command line to 'None'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_clean_cache' from command line to 'False'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_clean_first' from command line to 'False'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_force_configure' from command line to 'False'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'ament_cmake_args' from command line to 'None'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'catkin_cmake_args' from command line to 'None'
+[1.355s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.355s] DEBUG:colcon.colcon_core.verb:Building package 'assessment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/assessment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/assessment', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/assessment', 'symlink_install': True, 'test_result_base': None}
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.368s] DEBUG:colcon.colcon_core.verb:Building package 'assessment_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/assessment_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/assessment_interfaces', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/assessment_interfaces', 'symlink_install': True, 'test_result_base': None}
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.380s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.380s] DEBUG:colcon.colcon_core.verb:Building package 'auro_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/auro_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/auro_interfaces', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/auro_interfaces', 'symlink_install': True, 'test_result_base': None}
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_args' from command line to 'None'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_target' from command line to 'None'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_clean_cache' from command line to 'False'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_clean_first' from command line to 'False'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_force_configure' from command line to 'False'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'ament_cmake_args' from command line to 'None'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'catkin_cmake_args' from command line to 'None'
+[1.392s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.392s] DEBUG:colcon.colcon_core.verb:Building package 'solution' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/solution', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/solution', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/solution', 'symlink_install': True, 'test_result_base': None}
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'solution_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'solution_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'solution_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'solution_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'solution_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'solution_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'solution_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'solution_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.404s] Level 5:colcon.colcon_core.verb:set package 'solution_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.404s] DEBUG:colcon.colcon_core.verb:Building package 'solution_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/solution_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/solution_interfaces', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/solution_interfaces', 'symlink_install': True, 'test_result_base': None}
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_args' from command line to 'None'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_target' from command line to 'None'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_clean_cache' from command line to 'False'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_clean_first' from command line to 'False'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_force_configure' from command line to 'False'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'ament_cmake_args' from command line to 'None'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'catkin_cmake_args' from command line to 'None'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.416s] DEBUG:colcon.colcon_core.verb:Building package 'tf_relay' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/tf_relay', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/tf_relay', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/tf_relay', 'symlink_install': True, 'test_result_base': None}
+[1.428s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_args' from command line to 'None'
+[1.428s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_target' from command line to 'None'
+[1.428s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.428s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_clean_cache' from command line to 'False'
+[1.428s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_clean_first' from command line to 'False'
+[1.428s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'cmake_force_configure' from command line to 'False'
+[1.428s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'ament_cmake_args' from command line to 'None'
+[1.428s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'catkin_cmake_args' from command line to 'None'
+[1.428s] Level 5:colcon.colcon_core.verb:set package 'tf_transformations' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.428s] DEBUG:colcon.colcon_core.verb:Building package 'tf_transformations' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/tf_transformations', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/tf_transformations', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/tf_transformations', 'symlink_install': True, 'test_result_base': None}
+[1.439s] Level 5:colcon.colcon_core.verb:set package 'week_1' build argument 'cmake_args' from command line to 'None'
+[1.439s] Level 5:colcon.colcon_core.verb:set package 'week_1' build argument 'cmake_target' from command line to 'None'
+[1.439s] Level 5:colcon.colcon_core.verb:set package 'week_1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.439s] Level 5:colcon.colcon_core.verb:set package 'week_1' build argument 'cmake_clean_cache' from command line to 'False'
+[1.439s] Level 5:colcon.colcon_core.verb:set package 'week_1' build argument 'cmake_clean_first' from command line to 'False'
+[1.439s] Level 5:colcon.colcon_core.verb:set package 'week_1' build argument 'cmake_force_configure' from command line to 'False'
+[1.440s] Level 5:colcon.colcon_core.verb:set package 'week_1' build argument 'ament_cmake_args' from command line to 'None'
+[1.440s] Level 5:colcon.colcon_core.verb:set package 'week_1' build argument 'catkin_cmake_args' from command line to 'None'
+[1.440s] Level 5:colcon.colcon_core.verb:set package 'week_1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.440s] DEBUG:colcon.colcon_core.verb:Building package 'week_1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/week_1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/week_1', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/week_1', 'symlink_install': True, 'test_result_base': None}
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'week_2' build argument 'cmake_args' from command line to 'None'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'week_2' build argument 'cmake_target' from command line to 'None'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'week_2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'week_2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'week_2' build argument 'cmake_clean_first' from command line to 'False'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'week_2' build argument 'cmake_force_configure' from command line to 'False'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'week_2' build argument 'ament_cmake_args' from command line to 'None'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'week_2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.451s] Level 5:colcon.colcon_core.verb:set package 'week_2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.451s] DEBUG:colcon.colcon_core.verb:Building package 'week_2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/week_2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/week_2', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/week_2', 'symlink_install': True, 'test_result_base': None}
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'week_3' build argument 'cmake_args' from command line to 'None'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'week_3' build argument 'cmake_target' from command line to 'None'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'week_3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'week_3' build argument 'cmake_clean_cache' from command line to 'False'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'week_3' build argument 'cmake_clean_first' from command line to 'False'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'week_3' build argument 'cmake_force_configure' from command line to 'False'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'week_3' build argument 'ament_cmake_args' from command line to 'None'
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'week_3' build argument 'catkin_cmake_args' from command line to 'None'
+[1.464s] Level 5:colcon.colcon_core.verb:set package 'week_3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.464s] DEBUG:colcon.colcon_core.verb:Building package 'week_3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/week_3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/week_3', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/week_3', 'symlink_install': True, 'test_result_base': None}
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'week_4' build argument 'cmake_args' from command line to 'None'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'week_4' build argument 'cmake_target' from command line to 'None'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'week_4' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'week_4' build argument 'cmake_clean_cache' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'week_4' build argument 'cmake_clean_first' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'week_4' build argument 'cmake_force_configure' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'week_4' build argument 'ament_cmake_args' from command line to 'None'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'week_4' build argument 'catkin_cmake_args' from command line to 'None'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'week_4' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.475s] DEBUG:colcon.colcon_core.verb:Building package 'week_4' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/week_4', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/week_4', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/week_4', 'symlink_install': True, 'test_result_base': None}
+[1.487s] Level 5:colcon.colcon_core.verb:set package 'week_5' build argument 'cmake_args' from command line to 'None'
+[1.487s] Level 5:colcon.colcon_core.verb:set package 'week_5' build argument 'cmake_target' from command line to 'None'
+[1.487s] Level 5:colcon.colcon_core.verb:set package 'week_5' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.487s] Level 5:colcon.colcon_core.verb:set package 'week_5' build argument 'cmake_clean_cache' from command line to 'False'
+[1.487s] Level 5:colcon.colcon_core.verb:set package 'week_5' build argument 'cmake_clean_first' from command line to 'False'
+[1.487s] Level 5:colcon.colcon_core.verb:set package 'week_5' build argument 'cmake_force_configure' from command line to 'False'
+[1.487s] Level 5:colcon.colcon_core.verb:set package 'week_5' build argument 'ament_cmake_args' from command line to 'None'
+[1.487s] Level 5:colcon.colcon_core.verb:set package 'week_5' build argument 'catkin_cmake_args' from command line to 'None'
+[1.487s] Level 5:colcon.colcon_core.verb:set package 'week_5' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.487s] DEBUG:colcon.colcon_core.verb:Building package 'week_5' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/week_5', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/week_5', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/week_5', 'symlink_install': True, 'test_result_base': None}
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'week_6' build argument 'cmake_args' from command line to 'None'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'week_6' build argument 'cmake_target' from command line to 'None'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'week_6' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'week_6' build argument 'cmake_clean_cache' from command line to 'False'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'week_6' build argument 'cmake_clean_first' from command line to 'False'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'week_6' build argument 'cmake_force_configure' from command line to 'False'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'week_6' build argument 'ament_cmake_args' from command line to 'None'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'week_6' build argument 'catkin_cmake_args' from command line to 'None'
+[1.499s] Level 5:colcon.colcon_core.verb:set package 'week_6' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.499s] DEBUG:colcon.colcon_core.verb:Building package 'week_6' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/week_6', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/week_6', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/week_6', 'symlink_install': True, 'test_result_base': None}
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'week_7' build argument 'cmake_args' from command line to 'None'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'week_7' build argument 'cmake_target' from command line to 'None'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'week_7' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.510s] Level 5:colcon.colcon_core.verb:set package 'week_7' build argument 'cmake_clean_cache' from command line to 'False'
+[1.511s] Level 5:colcon.colcon_core.verb:set package 'week_7' build argument 'cmake_clean_first' from command line to 'False'
+[1.511s] Level 5:colcon.colcon_core.verb:set package 'week_7' build argument 'cmake_force_configure' from command line to 'False'
+[1.511s] Level 5:colcon.colcon_core.verb:set package 'week_7' build argument 'ament_cmake_args' from command line to 'None'
+[1.511s] Level 5:colcon.colcon_core.verb:set package 'week_7' build argument 'catkin_cmake_args' from command line to 'None'
+[1.511s] Level 5:colcon.colcon_core.verb:set package 'week_7' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.511s] DEBUG:colcon.colcon_core.verb:Building package 'week_7' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/week_7', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/week_7', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/week_7', 'symlink_install': True, 'test_result_base': None}
+[1.522s] Level 5:colcon.colcon_core.verb:set package 'week_8' build argument 'cmake_args' from command line to 'None'
+[1.522s] Level 5:colcon.colcon_core.verb:set package 'week_8' build argument 'cmake_target' from command line to 'None'
+[1.523s] Level 5:colcon.colcon_core.verb:set package 'week_8' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.523s] Level 5:colcon.colcon_core.verb:set package 'week_8' build argument 'cmake_clean_cache' from command line to 'False'
+[1.523s] Level 5:colcon.colcon_core.verb:set package 'week_8' build argument 'cmake_clean_first' from command line to 'False'
+[1.523s] Level 5:colcon.colcon_core.verb:set package 'week_8' build argument 'cmake_force_configure' from command line to 'False'
+[1.523s] Level 5:colcon.colcon_core.verb:set package 'week_8' build argument 'ament_cmake_args' from command line to 'None'
+[1.523s] Level 5:colcon.colcon_core.verb:set package 'week_8' build argument 'catkin_cmake_args' from command line to 'None'
+[1.523s] Level 5:colcon.colcon_core.verb:set package 'week_8' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.523s] DEBUG:colcon.colcon_core.verb:Building package 'week_8' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/week_8', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/week_8', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/week_8', 'symlink_install': True, 'test_result_base': None}
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'gazebo_plugins' build argument 'cmake_args' from command line to 'None'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'gazebo_plugins' build argument 'cmake_target' from command line to 'None'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'gazebo_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'gazebo_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'gazebo_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'gazebo_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'gazebo_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'gazebo_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[1.535s] Level 5:colcon.colcon_core.verb:set package 'gazebo_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.535s] DEBUG:colcon.colcon_core.verb:Building package 'gazebo_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/baguette/Documents/CS-AURO/build/gazebo_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/baguette/Documents/CS-AURO/install/gazebo_plugins', 'merge_install': False, 'path': '/home/baguette/Documents/CS-AURO/gazebo_ros_pkgs/gazebo_plugins', 'symlink_install': True, 'test_result_base': None}
+[1.546s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.560s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/baguette/Documents/CS-AURO/assessment_interfaces' with build type 'ament_cmake'
+[1.560s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/baguette/Documents/CS-AURO/assessment_interfaces'
+[1.573s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.573s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.573s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.599s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/assessment' with build type 'ament_python'
+[1.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment', 'ament_prefix_path')
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/hook/ament_prefix_path.ps1'
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/hook/ament_prefix_path.dsv'
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/hook/ament_prefix_path.sh'
+[1.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.649s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/baguette/Documents/CS-AURO/auro_interfaces' with build type 'ament_cmake'
+[1.649s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/baguette/Documents/CS-AURO/auro_interfaces'
+[1.662s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.662s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.688s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/solution' with build type 'ament_python'
+[1.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('solution', 'ament_prefix_path')
+[1.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution/share/solution/hook/ament_prefix_path.ps1'
+[1.701s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/solution/share/solution/hook/ament_prefix_path.dsv'
+[1.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution/share/solution/hook/ament_prefix_path.sh'
+[1.713s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.713s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.738s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/baguette/Documents/CS-AURO/solution_interfaces' with build type 'ament_cmake'
+[1.739s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/baguette/Documents/CS-AURO/solution_interfaces'
+[1.750s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.750s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.777s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/tf_relay' with build type 'ament_python'
+[1.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_relay', 'ament_prefix_path')
+[1.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/hook/ament_prefix_path.ps1'
+[1.789s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/hook/ament_prefix_path.dsv'
+[1.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/hook/ament_prefix_path.sh'
+[1.802s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.802s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.827s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/tf_transformations' with build type 'ament_python'
+[1.827s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_transformations', 'ament_prefix_path')
+[1.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/hook/ament_prefix_path.ps1'
+[1.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/hook/ament_prefix_path.dsv'
+[1.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/hook/ament_prefix_path.sh'
+[1.852s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.852s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.886s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/week_1' with build type 'ament_python'
+[1.887s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_1', 'ament_prefix_path')
+[1.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/hook/ament_prefix_path.ps1'
+[1.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/hook/ament_prefix_path.dsv'
+[1.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/hook/ament_prefix_path.sh'
+[1.911s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.911s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.937s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/week_2' with build type 'ament_python'
+[1.937s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_2', 'ament_prefix_path')
+[1.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/hook/ament_prefix_path.ps1'
+[1.950s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/hook/ament_prefix_path.dsv'
+[1.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/hook/ament_prefix_path.sh'
+[1.962s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.962s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.988s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/week_3' with build type 'ament_python'
+[1.988s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_3', 'ament_prefix_path')
+[2.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/hook/ament_prefix_path.ps1'
+[2.001s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/hook/ament_prefix_path.dsv'
+[2.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/hook/ament_prefix_path.sh'
+[2.013s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.013s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.039s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/week_4' with build type 'ament_python'
+[2.039s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_4', 'ament_prefix_path')
+[2.051s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/hook/ament_prefix_path.ps1'
+[2.052s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/hook/ament_prefix_path.dsv'
+[2.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/hook/ament_prefix_path.sh'
+[2.064s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.065s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.090s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/week_5' with build type 'ament_python'
+[2.090s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_5', 'ament_prefix_path')
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/hook/ament_prefix_path.ps1'
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/hook/ament_prefix_path.dsv'
+[2.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/hook/ament_prefix_path.sh'
+[2.115s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.115s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.140s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/week_6' with build type 'ament_python'
+[2.140s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_6', 'ament_prefix_path')
+[2.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/hook/ament_prefix_path.ps1'
+[2.153s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/hook/ament_prefix_path.dsv'
+[2.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/hook/ament_prefix_path.sh'
+[2.166s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.166s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.192s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/week_7' with build type 'ament_python'
+[2.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_7', 'ament_prefix_path')
+[2.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/hook/ament_prefix_path.ps1'
+[2.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/hook/ament_prefix_path.dsv'
+[2.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/hook/ament_prefix_path.sh'
+[2.216s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.216s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.242s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/baguette/Documents/CS-AURO/week_8' with build type 'ament_python'
+[2.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_8', 'ament_prefix_path')
+[2.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/hook/ament_prefix_path.ps1'
+[2.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/hook/ament_prefix_path.dsv'
+[2.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/hook/ament_prefix_path.sh'
+[2.268s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.268s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.300s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/assessment_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/build/assessment_interfaces -- -j16 -l16
+[2.503s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/assessment'
+[2.515s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.515s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/auro_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/build/auro_interfaces -- -j16 -l16
+[2.754s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/solution'
+[2.767s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.767s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.798s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/solution_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/build/solution_interfaces -- -j16 -l16
+[3.055s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/tf_relay'
+[3.076s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.076s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.326s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/tf_transformations'
+[3.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.346s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.599s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/week_1'
+[3.612s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.612s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.844s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/week_2'
+[3.856s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.856s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.096s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/week_3'
+[4.109s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.109s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.357s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/week_4'
+[4.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.371s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.613s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/week_5'
+[4.626s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.626s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.859s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/week_6'
+[4.872s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.872s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.094s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/week_7'
+[5.115s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.115s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.151s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/auro_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/build/auro_interfaces -- -j16 -l16
+[5.352s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/baguette/Documents/CS-AURO/week_8'
+[5.364s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.364s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/solution_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/build/solution_interfaces -- -j16 -l16
+[5.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/build/assessment_interfaces -- -j16 -l16
+[5.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/auro_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/CS-AURO/build/auro_interfaces
+[5.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/solution_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/CS-AURO/build/solution_interfaces
+[5.516s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auro_interfaces)
+[5.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/auro_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/CS-AURO/build/auro_interfaces
+[5.545s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces' for CMake module files
+[5.546s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces' for CMake config files
+[5.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('auro_interfaces', 'cmake_prefix_path')
+[5.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.ps1'
+[5.573s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.dsv'
+[5.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.sh'
+[5.575s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces/lib'
+[5.575s] Level 1:colcon.colcon_core.shell:create_environment_hook('auro_interfaces', 'ld_library_path_lib')
+[5.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.ps1'
+[5.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.dsv'
+[5.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.sh'
+[5.598s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces/bin'
+[5.598s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces/lib/pkgconfig/auro_interfaces.pc'
+[5.599s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces/lib/python3.10/site-packages'
+[5.599s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces/bin'
+[5.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/package.ps1'
+[5.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/package.dsv'
+[5.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/package.sh'
+[5.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/package.bash'
+[5.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/package.zsh'
+[5.625s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/colcon-core/packages/auro_interfaces)
+[5.626s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(solution_interfaces)
+[5.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/solution_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/CS-AURO/build/solution_interfaces
+[5.649s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces' for CMake module files
+[5.650s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces' for CMake config files
+[5.651s] Level 1:colcon.colcon_core.shell:create_environment_hook('solution_interfaces', 'cmake_prefix_path')
+[5.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/cmake_prefix_path.ps1'
+[5.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/cmake_prefix_path.dsv'
+[5.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/cmake_prefix_path.sh'
+[5.675s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces/lib'
+[5.675s] Level 1:colcon.colcon_core.shell:create_environment_hook('solution_interfaces', 'ld_library_path_lib')
+[5.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/ld_library_path_lib.ps1'
+[5.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/ld_library_path_lib.dsv'
+[5.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/ld_library_path_lib.sh'
+[5.700s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces/bin'
+[5.700s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces/lib/pkgconfig/solution_interfaces.pc'
+[5.700s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces/lib/python3.10/site-packages'
+[5.701s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces/bin'
+[5.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/package.ps1'
+[5.725s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/package.dsv'
+[5.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/package.sh'
+[5.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/package.bash'
+[5.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/package.zsh'
+[5.728s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/colcon-core/packages/solution_interfaces)
+[5.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/assessment_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/CS-AURO/build/assessment_interfaces
+[5.799s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auro_interfaces)
+[5.821s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces' for CMake module files
+[5.822s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces' for CMake config files
+[5.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('auro_interfaces', 'cmake_prefix_path')
+[5.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.ps1'
+[5.847s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.dsv'
+[5.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.sh'
+[5.848s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces/lib'
+[5.848s] Level 1:colcon.colcon_core.shell:create_environment_hook('auro_interfaces', 'ld_library_path_lib')
+[5.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.ps1'
+[5.869s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.dsv'
+[5.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.sh'
+[5.870s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces/bin'
+[5.870s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces/lib/pkgconfig/auro_interfaces.pc'
+[5.870s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces/lib/python3.10/site-packages'
+[5.870s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/auro_interfaces/bin'
+[5.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/package.ps1'
+[5.890s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/package.dsv'
+[5.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/package.sh'
+[5.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/package.bash'
+[5.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/auro_interfaces/package.zsh'
+[5.892s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/auro_interfaces/share/colcon-core/packages/auro_interfaces)
+[5.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/tf_transformations': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/tf_transformations/prefix_override:/home/baguette/Documents/CS-AURO/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/tf_transformations/build --no-deps install_data
+[5.921s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(solution_interfaces)
+[5.944s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces' for CMake module files
+[5.945s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces' for CMake config files
+[5.946s] Level 1:colcon.colcon_core.shell:create_environment_hook('solution_interfaces', 'cmake_prefix_path')
+[5.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/cmake_prefix_path.ps1'
+[5.968s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/cmake_prefix_path.dsv'
+[5.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/cmake_prefix_path.sh'
+[5.969s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces/lib'
+[5.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('solution_interfaces', 'ld_library_path_lib')
+[5.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/ld_library_path_lib.ps1'
+[5.991s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/ld_library_path_lib.dsv'
+[5.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/hook/ld_library_path_lib.sh'
+[5.991s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces/bin'
+[5.991s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces/lib/pkgconfig/solution_interfaces.pc'
+[5.992s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces/lib/python3.10/site-packages'
+[5.992s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution_interfaces/bin'
+[6.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/package.ps1'
+[6.010s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/package.dsv'
+[6.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/package.sh'
+[6.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/package.bash'
+[6.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/solution_interfaces/package.zsh'
+[6.011s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/solution_interfaces/share/colcon-core/packages/solution_interfaces)
+[6.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/solution': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/solution/prefix_override:/home/baguette/Documents/CS-AURO/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/solution/build --no-deps install_data
+[6.015s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assessment_interfaces)
+[6.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/CS-AURO/build/assessment_interfaces
+[6.028s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces' for CMake module files
+[6.028s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces' for CMake config files
+[6.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment_interfaces', 'cmake_prefix_path')
+[6.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.ps1'
+[6.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.dsv'
+[6.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.sh'
+[6.043s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib'
+[6.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment_interfaces', 'ld_library_path_lib')
+[6.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.ps1'
+[6.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.dsv'
+[6.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.sh'
+[6.056s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/bin'
+[6.056s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/pkgconfig/assessment_interfaces.pc'
+[6.057s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/python3.10/site-packages'
+[6.057s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/bin'
+[6.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.ps1'
+[6.070s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.dsv'
+[6.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.sh'
+[6.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.bash'
+[6.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.zsh'
+[6.071s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/colcon-core/packages/assessment_interfaces)
+[6.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/week_1': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_1/prefix_override:/home/baguette/Documents/CS-AURO/install/week_1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_1/build --no-deps install_data
+[6.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/week_2': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_2/prefix_override:/home/baguette/Documents/CS-AURO/install/week_2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_2/build --no-deps install_data
+[6.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/assessment': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/assessment/prefix_override:/home/baguette/Documents/CS-AURO/install/assessment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/assessment/build --no-deps install_data
+[6.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/week_7': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_7/prefix_override:/home/baguette/Documents/CS-AURO/install/week_7/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_7/build --no-deps install_data
+[6.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/tf_relay': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/tf_relay/prefix_override:/home/baguette/Documents/CS-AURO/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/tf_relay/build --no-deps install_data
+[6.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/week_4': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_4/prefix_override:/home/baguette/Documents/CS-AURO/install/week_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_4/build --no-deps install_data
+[6.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/week_8': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_8/prefix_override:/home/baguette/Documents/CS-AURO/install/week_8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_8/build --no-deps install_data
+[6.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/week_5': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_5/prefix_override:/home/baguette/Documents/CS-AURO/install/week_5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_5/build --no-deps install_data
+[6.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/week_3': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_3/prefix_override:/home/baguette/Documents/CS-AURO/install/week_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_3/build --no-deps install_data
+[6.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/week_6': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_6/prefix_override:/home/baguette/Documents/CS-AURO/install/week_6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_6/build --no-deps install_data
+[6.339s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assessment_interfaces)
+[6.364s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces' for CMake module files
+[6.365s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces' for CMake config files
+[6.368s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment_interfaces', 'cmake_prefix_path')
+[6.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.ps1'
+[6.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.dsv'
+[6.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.sh'
+[6.396s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib'
+[6.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment_interfaces', 'ld_library_path_lib')
+[6.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.ps1'
+[6.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.dsv'
+[6.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.sh'
+[6.423s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/bin'
+[6.423s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/pkgconfig/assessment_interfaces.pc'
+[6.423s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib/python3.10/site-packages'
+[6.423s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/bin'
+[6.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.ps1'
+[6.451s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.dsv'
+[6.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.sh'
+[6.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.bash'
+[6.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/assessment_interfaces/package.zsh'
+[6.453s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/assessment_interfaces/share/colcon-core/packages/assessment_interfaces)
+[6.453s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/baguette/Documents/CS-AURO/gazebo_ros_pkgs/gazebo_plugins' with build type 'ament_cmake'
+[6.453s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/baguette/Documents/CS-AURO/gazebo_ros_pkgs/gazebo_plugins'
+[6.478s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.478s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_transformations', 'pythonpath_develop')
+[6.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/tf_transformations' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/tf_transformations/prefix_override:/home/baguette/Documents/CS-AURO/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/tf_transformations/build --no-deps install_data
+[6.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/tf_transformations/share/tf_transformations/hook/pythonpath_develop.ps1'
+[6.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/tf_transformations/share/tf_transformations/hook/pythonpath_develop.dsv'
+[6.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/tf_transformations/share/tf_transformations/hook/pythonpath_develop.sh'
+[6.587s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_transformations' for CMake module files
+[6.587s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_transformations' for CMake config files
+[6.588s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_transformations/lib'
+[6.588s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_transformations/bin'
+[6.588s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_transformations/lib/pkgconfig/tf_transformations.pc'
+[6.588s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_transformations/lib/python3.10/site-packages'
+[6.589s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_transformations', 'pythonpath')
+[6.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/hook/pythonpath.ps1'
+[6.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/hook/pythonpath.dsv'
+[6.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/hook/pythonpath.sh'
+[6.608s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_transformations/bin'
+[6.608s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tf_transformations)
+[6.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/package.ps1'
+[6.630s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/package.dsv'
+[6.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/package.sh'
+[6.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/package.bash'
+[6.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/tf_transformations/share/tf_transformations/package.zsh'
+[6.633s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/tf_transformations/share/colcon-core/packages/tf_transformations)
+[6.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('solution', 'pythonpath_develop')
+[6.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/solution' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/solution/prefix_override:/home/baguette/Documents/CS-AURO/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/solution/build --no-deps install_data
+[6.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/solution/share/solution/hook/pythonpath_develop.ps1'
+[6.650s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/solution/share/solution/hook/pythonpath_develop.dsv'
+[6.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/solution/share/solution/hook/pythonpath_develop.sh'
+[6.665s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution' for CMake module files
+[6.666s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution' for CMake config files
+[6.666s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution/lib'
+[6.666s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution/bin'
+[6.666s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution/lib/pkgconfig/solution.pc'
+[6.667s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution/lib/python3.10/site-packages'
+[6.667s] Level 1:colcon.colcon_core.shell:create_environment_hook('solution', 'pythonpath')
+[6.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution/share/solution/hook/pythonpath.ps1'
+[6.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/solution/share/solution/hook/pythonpath.dsv'
+[6.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/solution/share/solution/hook/pythonpath.sh'
+[6.684s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/solution/bin'
+[6.684s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(solution)
+[6.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution/share/solution/package.ps1'
+[6.702s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/solution/share/solution/package.dsv'
+[6.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution/share/solution/package.sh'
+[6.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution/share/solution/package.bash'
+[6.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/solution/share/solution/package.zsh'
+[6.703s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/solution/share/colcon-core/packages/solution)
+[6.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_2', 'pythonpath_develop')
+[6.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/week_2' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_2/prefix_override:/home/baguette/Documents/CS-AURO/install/week_2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_2/build --no-deps install_data
+[6.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_2/share/week_2/hook/pythonpath_develop.ps1'
+[6.718s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/week_2/share/week_2/hook/pythonpath_develop.dsv'
+[6.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_2/share/week_2/hook/pythonpath_develop.sh'
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_2' for CMake module files
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_2' for CMake config files
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_2/lib'
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_2/bin'
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_2/lib/pkgconfig/week_2.pc'
+[6.732s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_2/lib/python3.10/site-packages'
+[6.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_2', 'pythonpath')
+[6.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/hook/pythonpath.ps1'
+[6.745s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/hook/pythonpath.dsv'
+[6.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/hook/pythonpath.sh'
+[6.745s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_2/bin'
+[6.745s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(week_2)
+[6.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/package.ps1'
+[6.757s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/package.dsv'
+[6.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/package.sh'
+[6.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/package.bash'
+[6.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_2/share/week_2/package.zsh'
+[6.758s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/week_2/share/colcon-core/packages/week_2)
+[6.762s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_6', 'pythonpath_develop')
+[6.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/gazebo_plugins': AMENT_PREFIX_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/build/gazebo_plugins -- -j16 -l16
+[6.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/week_6' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_6/prefix_override:/home/baguette/Documents/CS-AURO/install/week_6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_6/build --no-deps install_data
+[6.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_6/share/week_6/hook/pythonpath_develop.ps1'
+[6.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/week_6/share/week_6/hook/pythonpath_develop.dsv'
+[6.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_6/share/week_6/hook/pythonpath_develop.sh'
+[6.789s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_6' for CMake module files
+[6.789s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_6' for CMake config files
+[6.790s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_6/lib'
+[6.790s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_6/bin'
+[6.790s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_6/lib/pkgconfig/week_6.pc'
+[6.790s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_6/lib/python3.10/site-packages'
+[6.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_6', 'pythonpath')
+[6.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/hook/pythonpath.ps1'
+[6.803s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/hook/pythonpath.dsv'
+[6.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/hook/pythonpath.sh'
+[6.804s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_6/bin'
+[6.804s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(week_6)
+[6.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/package.ps1'
+[6.817s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/package.dsv'
+[6.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/package.sh'
+[6.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/package.bash'
+[6.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_6/share/week_6/package.zsh'
+[6.818s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/week_6/share/colcon-core/packages/week_6)
+[6.818s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_8', 'pythonpath_develop')
+[6.820s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/week_8' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_8/prefix_override:/home/baguette/Documents/CS-AURO/install/week_8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_8/build --no-deps install_data
+[6.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_8/share/week_8/hook/pythonpath_develop.ps1'
+[6.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/week_8/share/week_8/hook/pythonpath_develop.dsv'
+[6.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_8/share/week_8/hook/pythonpath_develop.sh'
+[6.846s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_8' for CMake module files
+[6.847s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_8' for CMake config files
+[6.847s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_8/lib'
+[6.847s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_8/bin'
+[6.847s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_8/lib/pkgconfig/week_8.pc'
+[6.847s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_8/lib/python3.10/site-packages'
+[6.847s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_8', 'pythonpath')
+[6.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/hook/pythonpath.ps1'
+[6.860s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/hook/pythonpath.dsv'
+[6.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/hook/pythonpath.sh'
+[6.860s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_8/bin'
+[6.860s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(week_8)
+[6.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/package.ps1'
+[6.873s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/package.dsv'
+[6.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/package.sh'
+[6.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/package.bash'
+[6.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_8/share/week_8/package.zsh'
+[6.874s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/week_8/share/colcon-core/packages/week_8)
+[6.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_4', 'pythonpath_develop')
+[6.875s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/week_4' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_4/prefix_override:/home/baguette/Documents/CS-AURO/install/week_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_4/build --no-deps install_data
+[6.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_4/share/week_4/hook/pythonpath_develop.ps1'
+[6.887s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/week_4/share/week_4/hook/pythonpath_develop.dsv'
+[6.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_4/share/week_4/hook/pythonpath_develop.sh'
+[6.900s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_4' for CMake module files
+[6.900s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_4' for CMake config files
+[6.901s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_4/lib'
+[6.901s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_4/bin'
+[6.901s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_4/lib/pkgconfig/week_4.pc'
+[6.901s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_4/lib/python3.10/site-packages'
+[6.901s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_4', 'pythonpath')
+[6.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/hook/pythonpath.ps1'
+[6.913s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/hook/pythonpath.dsv'
+[6.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/hook/pythonpath.sh'
+[6.914s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_4/bin'
+[6.914s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(week_4)
+[6.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/package.ps1'
+[6.927s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/package.dsv'
+[6.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/package.sh'
+[6.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/package.bash'
+[6.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_4/share/week_4/package.zsh'
+[6.929s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/week_4/share/colcon-core/packages/week_4)
+[6.929s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment', 'pythonpath_develop')
+[6.930s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/assessment' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/assessment/prefix_override:/home/baguette/Documents/CS-AURO/install/assessment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/assessment/build --no-deps install_data
+[6.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/assessment/share/assessment/hook/pythonpath_develop.ps1'
+[6.943s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/assessment/share/assessment/hook/pythonpath_develop.dsv'
+[6.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/assessment/share/assessment/hook/pythonpath_develop.sh'
+[6.964s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment' for CMake module files
+[6.965s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment' for CMake config files
+[6.965s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment/lib'
+[6.965s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment/bin'
+[6.965s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment/lib/pkgconfig/assessment.pc'
+[6.966s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment/lib/python3.10/site-packages'
+[6.966s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment', 'pythonpath')
+[6.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/hook/pythonpath.ps1'
+[6.978s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/hook/pythonpath.dsv'
+[6.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/hook/pythonpath.sh'
+[6.978s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/assessment/bin'
+[6.979s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assessment)
+[6.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/package.ps1'
+[6.991s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/package.dsv'
+[6.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/package.sh'
+[6.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/package.bash'
+[6.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/assessment/share/assessment/package.zsh'
+[6.992s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/assessment/share/colcon-core/packages/assessment)
+[6.992s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_3', 'pythonpath_develop')
+[6.993s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/week_3' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_3/prefix_override:/home/baguette/Documents/CS-AURO/install/week_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_3/build --no-deps install_data
+[7.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_3/share/week_3/hook/pythonpath_develop.ps1'
+[7.005s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/week_3/share/week_3/hook/pythonpath_develop.dsv'
+[7.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_3/share/week_3/hook/pythonpath_develop.sh'
+[7.018s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_3' for CMake module files
+[7.018s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_3' for CMake config files
+[7.018s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_3/lib'
+[7.019s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_3/bin'
+[7.019s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_3/lib/pkgconfig/week_3.pc'
+[7.019s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_3/lib/python3.10/site-packages'
+[7.019s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_3', 'pythonpath')
+[7.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/hook/pythonpath.ps1'
+[7.032s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/hook/pythonpath.dsv'
+[7.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/hook/pythonpath.sh'
+[7.032s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_3/bin'
+[7.032s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(week_3)
+[7.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/package.ps1'
+[7.045s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/package.dsv'
+[7.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/package.sh'
+[7.045s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/package.bash'
+[7.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_3/share/week_3/package.zsh'
+[7.046s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/week_3/share/colcon-core/packages/week_3)
+[7.046s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_1', 'pythonpath_develop')
+[7.047s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/week_1' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_1/prefix_override:/home/baguette/Documents/CS-AURO/install/week_1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_1/build --no-deps install_data
+[7.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_1/share/week_1/hook/pythonpath_develop.ps1'
+[7.059s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/week_1/share/week_1/hook/pythonpath_develop.dsv'
+[7.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_1/share/week_1/hook/pythonpath_develop.sh'
+[7.072s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_1' for CMake module files
+[7.072s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_1' for CMake config files
+[7.073s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_1/lib'
+[7.073s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_1/bin'
+[7.073s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_1/lib/pkgconfig/week_1.pc'
+[7.073s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_1/lib/python3.10/site-packages'
+[7.073s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_1', 'pythonpath')
+[7.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/hook/pythonpath.ps1'
+[7.085s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/hook/pythonpath.dsv'
+[7.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/hook/pythonpath.sh'
+[7.086s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_1/bin'
+[7.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(week_1)
+[7.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/package.ps1'
+[7.099s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/package.dsv'
+[7.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/package.sh'
+[7.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/package.bash'
+[7.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_1/share/week_1/package.zsh'
+[7.100s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/week_1/share/colcon-core/packages/week_1)
+[7.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_7', 'pythonpath_develop')
+[7.101s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/week_7' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_7/prefix_override:/home/baguette/Documents/CS-AURO/install/week_7/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_7/build --no-deps install_data
+[7.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_7/share/week_7/hook/pythonpath_develop.ps1'
+[7.114s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/week_7/share/week_7/hook/pythonpath_develop.dsv'
+[7.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_7/share/week_7/hook/pythonpath_develop.sh'
+[7.127s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_7' for CMake module files
+[7.127s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_7' for CMake config files
+[7.127s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_7/lib'
+[7.127s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_7/bin'
+[7.127s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_7/lib/pkgconfig/week_7.pc'
+[7.127s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_7/lib/python3.10/site-packages'
+[7.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_7', 'pythonpath')
+[7.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/hook/pythonpath.ps1'
+[7.140s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/hook/pythonpath.dsv'
+[7.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/hook/pythonpath.sh'
+[7.140s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_7/bin'
+[7.140s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(week_7)
+[7.152s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/package.ps1'
+[7.152s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/package.dsv'
+[7.153s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/package.sh'
+[7.153s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/package.bash'
+[7.153s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_7/share/week_7/package.zsh'
+[7.153s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/week_7/share/colcon-core/packages/week_7)
+[7.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_relay', 'pythonpath_develop')
+[7.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/tf_relay' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/tf_relay/prefix_override:/home/baguette/Documents/CS-AURO/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/tf_relay/build --no-deps install_data
+[7.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/tf_relay/share/tf_relay/hook/pythonpath_develop.ps1'
+[7.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/tf_relay/share/tf_relay/hook/pythonpath_develop.dsv'
+[7.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/tf_relay/share/tf_relay/hook/pythonpath_develop.sh'
+[7.180s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_relay' for CMake module files
+[7.180s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_relay' for CMake config files
+[7.180s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_relay/lib'
+[7.180s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_relay/bin'
+[7.180s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_relay/lib/pkgconfig/tf_relay.pc'
+[7.181s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_relay/lib/python3.10/site-packages'
+[7.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_relay', 'pythonpath')
+[7.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/hook/pythonpath.ps1'
+[7.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/hook/pythonpath.dsv'
+[7.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/hook/pythonpath.sh'
+[7.194s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/tf_relay/bin'
+[7.194s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tf_relay)
+[7.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/package.ps1'
+[7.207s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/package.dsv'
+[7.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/package.sh'
+[7.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/package.bash'
+[7.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/tf_relay/share/tf_relay/package.zsh'
+[7.208s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/tf_relay/share/colcon-core/packages/tf_relay)
+[7.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_5', 'pythonpath_develop')
+[7.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/week_5' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_5/prefix_override:/home/baguette/Documents/CS-AURO/install/week_5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_5/build --no-deps install_data
+[7.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_5/share/week_5/hook/pythonpath_develop.ps1'
+[7.221s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/build/week_5/share/week_5/hook/pythonpath_develop.dsv'
+[7.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/build/week_5/share/week_5/hook/pythonpath_develop.sh'
+[7.234s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_5' for CMake module files
+[7.235s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_5' for CMake config files
+[7.235s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_5/lib'
+[7.235s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_5/bin'
+[7.235s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_5/lib/pkgconfig/week_5.pc'
+[7.235s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_5/lib/python3.10/site-packages'
+[7.235s] Level 1:colcon.colcon_core.shell:create_environment_hook('week_5', 'pythonpath')
+[7.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/hook/pythonpath.ps1'
+[7.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/hook/pythonpath.dsv'
+[7.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/hook/pythonpath.sh'
+[7.248s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/week_5/bin'
+[7.248s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(week_5)
+[7.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/package.ps1'
+[7.261s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/package.dsv'
+[7.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/package.sh'
+[7.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/package.bash'
+[7.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/week_5/share/week_5/package.zsh'
+[7.262s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/week_5/share/colcon-core/packages/week_5)
+[7.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/build/gazebo_plugins -- -j16 -l16
+[7.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/baguette/Documents/CS-AURO/build/gazebo_plugins': AMENT_PREFIX_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/baguette/Documents/CS-AURO/build/gazebo_plugins
+[7.322s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_plugins)
+[7.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/baguette/Documents/CS-AURO/build/gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/baguette/Documents/CS-AURO/install/assessment_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/baguette/Documents/CS-AURO/build/gazebo_plugins
+[7.335s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins' for CMake module files
+[7.335s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins' for CMake config files
+[7.336s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_plugins', 'cmake_prefix_path')
+[7.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/cmake_prefix_path.ps1'
+[7.348s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/cmake_prefix_path.dsv'
+[7.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/cmake_prefix_path.sh'
+[7.348s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/lib'
+[7.349s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_plugins', 'ld_library_path_lib')
+[7.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/ld_library_path_lib.ps1'
+[7.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/ld_library_path_lib.dsv'
+[7.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/ld_library_path_lib.sh'
+[7.361s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/bin'
+[7.361s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/lib/pkgconfig/gazebo_plugins.pc'
+[7.361s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/lib/python3.10/site-packages'
+[7.361s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/bin'
+[7.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/package.ps1'
+[7.373s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/package.dsv'
+[7.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/package.sh'
+[7.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/package.bash'
+[7.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/package.zsh'
+[7.374s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/colcon-core/packages/gazebo_plugins)
+[7.423s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_plugins)
+[7.436s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins' for CMake module files
+[7.436s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins' for CMake config files
+[7.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_plugins', 'cmake_prefix_path')
+[7.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/cmake_prefix_path.ps1'
+[7.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/cmake_prefix_path.dsv'
+[7.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/cmake_prefix_path.sh'
+[7.449s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/lib'
+[7.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_plugins', 'ld_library_path_lib')
+[7.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/ld_library_path_lib.ps1'
+[7.461s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/ld_library_path_lib.dsv'
+[7.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/hook/ld_library_path_lib.sh'
+[7.462s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/bin'
+[7.462s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/lib/pkgconfig/gazebo_plugins.pc'
+[7.462s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/lib/python3.10/site-packages'
+[7.462s] Level 1:colcon.colcon_core.environment:checking '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/bin'
+[7.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/package.ps1'
+[7.474s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/package.dsv'
+[7.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/package.sh'
+[7.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/package.bash'
+[7.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/gazebo_plugins/package.zsh'
+[7.475s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/baguette/Documents/CS-AURO/install/gazebo_plugins/share/colcon-core/packages/gazebo_plugins)
+[7.476s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.476s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.476s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.476s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.492s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.492s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.492s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.510s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.524s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/baguette/Documents/CS-AURO/install/local_setup.ps1'
+[7.525s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/baguette/Documents/CS-AURO/install/_local_setup_util_ps1.py'
+[7.526s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/baguette/Documents/CS-AURO/install/setup.ps1'
+[7.539s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/baguette/Documents/CS-AURO/install/local_setup.sh'
+[7.539s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/baguette/Documents/CS-AURO/install/_local_setup_util_sh.py'
+[7.539s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/baguette/Documents/CS-AURO/install/setup.sh'
+[7.552s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/baguette/Documents/CS-AURO/install/local_setup.bash'
+[7.553s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/baguette/Documents/CS-AURO/install/setup.bash'
+[7.566s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/baguette/Documents/CS-AURO/install/local_setup.zsh'
+[7.566s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/baguette/Documents/CS-AURO/install/setup.zsh'

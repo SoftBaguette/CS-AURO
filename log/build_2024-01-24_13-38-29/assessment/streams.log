@@ -1,0 +1,24 @@
+[4.376s] Invoking command in '/home/baguette/Documents/CS-AURO/build/assessment': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/assessment/prefix_override:/home/baguette/Documents/CS-AURO/install/assessment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/assessment/build --no-deps install_data
+[4.649s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.649s]   warnings.warn(
+[4.650s] running develop
+[4.650s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.650s]   warnings.warn(
+[4.904s] running egg_info
+[4.904s] writing assessment.egg-info/PKG-INFO
+[4.904s] writing dependency_links to assessment.egg-info/dependency_links.txt
+[4.904s] writing entry points to assessment.egg-info/entry_points.txt
+[4.905s] writing requirements to assessment.egg-info/requires.txt
+[4.905s] writing top-level names to assessment.egg-info/top_level.txt
+[4.907s] reading manifest file 'assessment.egg-info/SOURCES.txt'
+[4.908s] writing manifest file 'assessment.egg-info/SOURCES.txt'
+[4.909s] running build_ext
+[4.910s] Creating /home/baguette/Documents/CS-AURO/install/assessment/lib/python3.10/site-packages/assessment.egg-link (link to .)
+[4.911s] Installing home_zone_sensor script to /home/baguette/Documents/CS-AURO/install/assessment/lib/assessment
+[4.911s] Installing item_manager script to /home/baguette/Documents/CS-AURO/install/assessment/lib/assessment
+[4.911s] Installing item_sensor script to /home/baguette/Documents/CS-AURO/install/assessment/lib/assessment
+[4.911s] Installing robot_sensor script to /home/baguette/Documents/CS-AURO/install/assessment/lib/assessment
+[4.911s] 
+[4.912s] Installed /home/baguette/Documents/CS-AURO/build/assessment
+[4.912s] running install_data
+[5.065s] Invoked command in '/home/baguette/Documents/CS-AURO/build/assessment' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/assessment/prefix_override:/home/baguette/Documents/CS-AURO/install/assessment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/assessment/build --no-deps install_data
