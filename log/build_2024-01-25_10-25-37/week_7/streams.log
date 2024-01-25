@@ -1,0 +1,20 @@
+[3.805s] Invoking command in '/home/baguette/Documents/CS-AURO/build/week_7': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_7/prefix_override:/home/baguette/Documents/CS-AURO/install/week_7/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_7/build --no-deps install_data
+[4.100s] running develop
+[4.101s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.101s]   warnings.warn(
+[4.102s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.103s]   warnings.warn(
+[4.312s] running egg_info
+[4.312s] writing week_7.egg-info/PKG-INFO
+[4.313s] writing dependency_links to week_7.egg-info/dependency_links.txt
+[4.313s] writing entry points to week_7.egg-info/entry_points.txt
+[4.314s] writing requirements to week_7.egg-info/requires.txt
+[4.314s] writing top-level names to week_7.egg-info/top_level.txt
+[4.317s] reading manifest file 'week_7.egg-info/SOURCES.txt'
+[4.318s] writing manifest file 'week_7.egg-info/SOURCES.txt'
+[4.320s] running build_ext
+[4.320s] Creating /home/baguette/Documents/CS-AURO/install/week_7/lib/python3.10/site-packages/week-7.egg-link (link to .)
+[4.322s] 
+[4.322s] Installed /home/baguette/Documents/CS-AURO/build/week_7
+[4.322s] running install_data
+[4.514s] Invoked command in '/home/baguette/Documents/CS-AURO/build/week_7' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_7/prefix_override:/home/baguette/Documents/CS-AURO/install/week_7/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_7/build --no-deps install_data

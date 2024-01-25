@@ -1,0 +1,22 @@
+[4.543s] Invoking command in '/home/baguette/Documents/CS-AURO/build/week_5': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_5/prefix_override:/home/baguette/Documents/CS-AURO/install/week_5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_5/build --no-deps install_data
+[4.949s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.949s]   warnings.warn(
+[4.949s] running develop
+[4.950s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.951s]   warnings.warn(
+[5.247s] running egg_info
+[5.247s] writing week_5.egg-info/PKG-INFO
+[5.247s] writing dependency_links to week_5.egg-info/dependency_links.txt
+[5.247s] writing entry points to week_5.egg-info/entry_points.txt
+[5.247s] writing requirements to week_5.egg-info/requires.txt
+[5.247s] writing top-level names to week_5.egg-info/top_level.txt
+[5.249s] reading manifest file 'week_5.egg-info/SOURCES.txt'
+[5.250s] writing manifest file 'week_5.egg-info/SOURCES.txt'
+[5.252s] running build_ext
+[5.254s] Creating /home/baguette/Documents/CS-AURO/install/week_5/lib/python3.10/site-packages/week-5.egg-link (link to .)
+[5.255s] Installing item_detector script to /home/baguette/Documents/CS-AURO/install/week_5/lib/week_5
+[5.255s] Installing item_spawner script to /home/baguette/Documents/CS-AURO/install/week_5/lib/week_5
+[5.255s] 
+[5.255s] Installed /home/baguette/Documents/CS-AURO/build/week_5
+[5.256s] running install_data
+[5.706s] Invoked command in '/home/baguette/Documents/CS-AURO/build/week_5' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/week_5/prefix_override:/home/baguette/Documents/CS-AURO/install/week_5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/week_5/build --no-deps install_data

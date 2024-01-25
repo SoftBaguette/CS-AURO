@@ -1,0 +1,19 @@
+[4.222s] Invoking command in '/home/baguette/Documents/CS-AURO/build/tf_transformations': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/tf_transformations/prefix_override:/home/baguette/Documents/CS-AURO/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/tf_transformations/build --no-deps install_data
+[4.983s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.984s]   warnings.warn(
+[4.984s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.984s]   warnings.warn(
+[4.984s] running develop
+[4.984s] running egg_info
+[4.984s] writing tf_transformations.egg-info/PKG-INFO
+[4.984s] writing dependency_links to tf_transformations.egg-info/dependency_links.txt
+[4.984s] writing requirements to tf_transformations.egg-info/requires.txt
+[4.984s] writing top-level names to tf_transformations.egg-info/top_level.txt
+[4.984s] reading manifest file 'tf_transformations.egg-info/SOURCES.txt'
+[4.984s] writing manifest file 'tf_transformations.egg-info/SOURCES.txt'
+[4.985s] running build_ext
+[4.985s] Creating /home/baguette/Documents/CS-AURO/install/tf_transformations/lib/python3.10/site-packages/tf-transformations.egg-link (link to .)
+[4.985s] 
+[4.985s] Installed /home/baguette/Documents/CS-AURO/build/tf_transformations
+[4.985s] running install_data
+[5.336s] Invoked command in '/home/baguette/Documents/CS-AURO/build/tf_transformations' returned '0': PYTHONPATH=/home/baguette/Documents/CS-AURO/build/tf_transformations/prefix_override:/home/baguette/Documents/CS-AURO/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/CS-AURO/build/tf_transformations/build --no-deps install_data
