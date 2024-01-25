@@ -1,0 +1,6 @@
+Invoking command in '/home/baguette/Documents/src/build/auro_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/baguette/Documents/src/auro_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/baguette/Documents/src/install/auro_interfaces
+Invoked command in '/home/baguette/Documents/src/build/auro_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/baguette/Documents/src/auro_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/baguette/Documents/src/install/auro_interfaces
+Invoking command in '/home/baguette/Documents/src/build/auro_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/src/build/auro_interfaces -- -j16 -l16
+Invoked command in '/home/baguette/Documents/src/build/auro_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/src/build/auro_interfaces -- -j16 -l16
+Invoking command in '/home/baguette/Documents/src/build/auro_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/src/build/auro_interfaces
+Invoked command in '/home/baguette/Documents/src/build/auro_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/src/build/auro_interfaces

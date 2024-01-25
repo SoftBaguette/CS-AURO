@@ -1,0 +1,1 @@
+/home/baguette/Documents/src/solution/launch/solution_nav2_launch.py

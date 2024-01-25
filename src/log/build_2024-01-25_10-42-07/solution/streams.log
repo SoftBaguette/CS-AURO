@@ -1,0 +1,36 @@
+[1.315s] Invoking command in '/home/baguette/Documents/src/build/solution': PYTHONPATH=/home/baguette/Documents/src/build/solution/prefix_override:/home/baguette/Documents/src/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/solution/build --no-deps install_data
+[1.541s] running develop
+[1.541s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.541s]   warnings.warn(
+[1.542s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.542s]   warnings.warn(
+[1.718s] running egg_info
+[1.718s] creating solution.egg-info
+[1.718s] writing solution.egg-info/PKG-INFO
+[1.718s] writing dependency_links to solution.egg-info/dependency_links.txt
+[1.718s] writing entry points to solution.egg-info/entry_points.txt
+[1.718s] writing requirements to solution.egg-info/requires.txt
+[1.718s] writing top-level names to solution.egg-info/top_level.txt
+[1.719s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[1.720s] reading manifest file 'solution.egg-info/SOURCES.txt'
+[1.720s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[1.721s] running build_ext
+[1.721s] Creating /home/baguette/Documents/src/install/solution/lib/python3.10/site-packages/solution.egg-link (link to .)
+[1.722s] Installing data_logger script to /home/baguette/Documents/src/install/solution/lib/solution
+[1.722s] Installing robot_controller script to /home/baguette/Documents/src/install/solution/lib/solution
+[1.722s] 
+[1.722s] Installed /home/baguette/Documents/src/build/solution
+[1.722s] running install_data
+[1.722s] creating /home/baguette/Documents/src/install/solution/share/ament_index
+[1.723s] creating /home/baguette/Documents/src/install/solution/share/ament_index/resource_index
+[1.723s] creating /home/baguette/Documents/src/install/solution/share/ament_index/resource_index/packages
+[1.723s] copying resource/solution -> /home/baguette/Documents/src/install/solution/share/ament_index/resource_index/packages
+[1.723s] copying package.xml -> /home/baguette/Documents/src/install/solution/share/solution
+[1.723s] creating /home/baguette/Documents/src/install/solution/share/solution/launch
+[1.723s] copying launch/solution_launch.py -> /home/baguette/Documents/src/install/solution/share/solution/launch/
+[1.723s] copying launch/solution_nav2_launch.py -> /home/baguette/Documents/src/install/solution/share/solution/launch/
+[1.723s] creating /home/baguette/Documents/src/install/solution/share/solution/config
+[1.723s] copying config/custom_rviz_windows.yaml -> /home/baguette/Documents/src/install/solution/share/solution/config/
+[1.723s] creating /home/baguette/Documents/src/install/solution/share/solution/params
+[1.724s] copying params/custom_nav2_params_namespaced.yaml -> /home/baguette/Documents/src/install/solution/share/solution/params/
+[1.760s] Invoked command in '/home/baguette/Documents/src/build/solution' returned '0': PYTHONPATH=/home/baguette/Documents/src/build/solution/prefix_override:/home/baguette/Documents/src/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/solution/build --no-deps install_data

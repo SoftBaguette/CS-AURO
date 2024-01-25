@@ -1,0 +1,1 @@
+/home/baguette/Documents/src/solution_interfaces/msg/Example.msg

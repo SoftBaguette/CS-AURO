@@ -1,0 +1,1 @@
+/home/baguette/Documents/src/auro_interfaces/msg/StringWithPose.msg

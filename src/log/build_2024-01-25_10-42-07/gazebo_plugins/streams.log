@@ -1,0 +1,157 @@
+[0.049s] Invoking command in '/home/baguette/Documents/src/build/gazebo_plugins': AMENT_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/baguette/Documents/src/install/assessment_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/baguette/Documents/src/install/assessment_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/baguette/Documents/src/gazebo_ros_pkgs/gazebo_plugins -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/baguette/Documents/src/install/gazebo_plugins
+[0.096s] -- The C compiler identification is GNU 11.4.0
+[0.140s] -- The CXX compiler identification is GNU 11.4.0
+[0.147s] -- Detecting C compiler ABI info
+[0.206s] -- Detecting C compiler ABI info - done
+[0.211s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.211s] -- Detecting C compile features
+[0.211s] -- Detecting C compile features - done
+[0.213s] -- Detecting CXX compiler ABI info
+[0.284s] -- Detecting CXX compiler ABI info - done
+[0.289s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.289s] -- Detecting CXX compile features
+[0.289s] -- Detecting CXX compile features - done
+[0.290s] -- CMAKE_CXX_STANDARD 17
+[0.292s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.421s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.465s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.493s] -- Found camera_info_manager: 3.1.7 (/opt/ros/humble/share/camera_info_manager/cmake)
+[0.535s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.540s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.546s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.557s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.572s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.623s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.625s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.650s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.657s] -- Looking for pthread.h
+[0.721s] -- Looking for pthread.h - found
+[0.721s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.786s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.787s] -- Found Threads: TRUE  
+[1.022s] -- Found gazebo_dev: 3.7.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[1.029s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.030s] -- Checking for module 'bullet>=2.82'
+[1.045s] --   Found bullet, version 3.05
+[1.161s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.215s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.232s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.257s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.270s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.275s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.279s] -- Searching for dependencies of ignition-math6
+[1.280s] -- Looking for OGRE...
+[1.280s] -- OGRE_PREFIX_WATCH changed.
+[1.285s] -- Checking for module 'OGRE'
+[1.299s] --   Found OGRE, version 1.9.0
+[1.340s] -- Found Ogre Ghadamon (1.9.0)
+[1.349s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.355s] -- Looking for OGRE_Paging...
+[1.360s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.360s] -- Looking for OGRE_Terrain...
+[1.364s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.364s] -- Looking for OGRE_Property...
+[1.368s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.368s] -- Looking for OGRE_RTShaderSystem...
+[1.373s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.373s] -- Looking for OGRE_Volume...
+[1.378s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.378s] -- Looking for OGRE_Overlay...
+[1.382s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.475s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.477s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.477s] -- Searching for dependencies of ignition-transport8
+[1.497s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.510s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.515s] -- Checking for module 'libzmq >= 4'
+[1.530s] --   Found libzmq , version 4.3.4
+[1.576s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.581s] -- Checking for module 'uuid'
+[1.597s] --   Found uuid, version 2.37.2
+[1.638s] -- Found UUID: TRUE  
+[1.640s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.640s] -- Searching for dependencies of ignition-msgs5
+[1.661s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.665s] -- Checking for module 'tinyxml2'
+[1.680s] --   Found tinyxml2, version 9.0.0
+[1.721s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.723s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.723s] -- Searching for dependencies of ignition-common3
+[1.723s] -- Looking for dlfcn.h - found
+[1.724s] -- Looking for libdl - found
+[1.725s] -- Found DL: TRUE  
+[1.735s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.736s] -- Searching for <ignition-common3> component [graphics]
+[1.738s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.738s] -- Searching for dependencies of ignition-common3-graphics
+[1.738s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.741s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.741s] -- Searching for dependencies of ignition-fuel_tools4
+[1.834s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.842s] -- Checking for module 'jsoncpp'
+[1.857s] --   Found jsoncpp, version 1.9.5
+[1.897s] -- Found JSONCPP: TRUE  
+[1.902s] -- Checking for module 'libzip'
+[1.916s] --   Found libzip, version 1.7.3
+[1.958s] -- Found ZIP: TRUE  
+[1.958s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.958s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.958s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.961s] -- Gazebo version: 11.10
+[1.961s] -- Checking for module 'tbb'
+[1.975s] --   Found tbb, version 2021.5.0
+[2.018s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[2.164s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[2.171s] -- Found image_transport: 3.1.7 (/opt/ros/humble/share/image_transport/cmake)
+[2.215s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[2.227s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.285s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[2.297s] -- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)
+[2.303s] -- Found tf2_geometry_msgs: 0.25.5 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.312s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.313s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.313s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.555s] -- Found assessment_interfaces: 0.0.0 (/home/baguette/Documents/src/install/assessment_interfaces/share/assessment_interfaces/cmake)
+[2.637s] -- Configuring done
+[2.665s] -- Generating done
+[2.667s] -- Build files have been written to: /home/baguette/Documents/src/build/gazebo_plugins
+[2.680s] Invoked command in '/home/baguette/Documents/src/build/gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/baguette/Documents/src/install/assessment_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/baguette/Documents/src/install/assessment_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/baguette/Documents/src/gazebo_ros_pkgs/gazebo_plugins -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/baguette/Documents/src/install/gazebo_plugins
+[2.682s] Invoking command in '/home/baguette/Documents/src/build/gazebo_plugins': AMENT_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/baguette/Documents/src/install/assessment_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/baguette/Documents/src/install/assessment_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/baguette/Documents/src/build/gazebo_plugins -- -j16 -l16
+[2.731s] [ 50%] [32mBuilding CXX object CMakeFiles/gazebo_ros_item_manager.dir/src/gazebo_ros_item_manager.cpp.o[0m
+[2.731s] [ 50%] [32mBuilding CXX object CMakeFiles/gazebo_ros_diff_drive.dir/src/gazebo_ros_diff_drive.cpp.o[0m
+[12.234s] [ 75%] [32m[1mLinking CXX shared library libgazebo_ros_item_manager.so[0m
+[12.535s] [ 75%] Built target gazebo_ros_item_manager
+[15.107s] [100%] [32m[1mLinking CXX shared library libgazebo_ros_diff_drive.so[0m
+[15.615s] [100%] Built target gazebo_ros_diff_drive
+[15.627s] Invoked command in '/home/baguette/Documents/src/build/gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/baguette/Documents/src/install/assessment_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/baguette/Documents/src/install/assessment_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/baguette/Documents/src/build/gazebo_plugins -- -j16 -l16
+[15.664s] Invoking command in '/home/baguette/Documents/src/build/gazebo_plugins': AMENT_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/baguette/Documents/src/install/assessment_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/baguette/Documents/src/install/assessment_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/baguette/Documents/src/build/gazebo_plugins
+[15.670s] -- Install configuration: ""
+[15.670s] -- Execute custom install script
+[15.671s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/environment/library_path.sh
+[15.678s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/environment/library_path.dsv
+[15.686s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/environment/gazebo_plugins.sh
+[15.694s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/environment/gazebo_plugins.dsv
+[15.703s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/gazebo_plugins
+[15.711s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/gazebo_plugins
+[15.720s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/environment/ament_prefix_path.sh
+[15.728s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/environment/ament_prefix_path.dsv
+[15.736s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/environment/path.sh
+[15.744s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/environment/path.dsv
+[15.752s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/local_setup.bash
+[15.760s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/local_setup.sh
+[15.768s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/local_setup.zsh
+[15.775s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/local_setup.dsv
+[15.781s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/package.dsv
+[15.790s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/ament_index/resource_index/packages/gazebo_plugins
+[15.799s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+[15.806s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.813s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.822s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/cmake/gazebo_pluginsConfig.cmake
+[15.830s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/cmake/gazebo_pluginsConfig-version.cmake
+[15.838s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins/package.xml
+[15.846s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/include/gazebo_plugins/gazebo_ros_diff_drive.hpp
+[15.854s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/include/gazebo_plugins/gazebo_ros_item_manager.hpp
+[15.862s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/lib/libgazebo_ros_diff_drive.so
+[15.869s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/lib/libgazebo_ros_item_manager.so
+[15.878s] -- Symlinking: /home/baguette/Documents/src/install/gazebo_plugins/share/gazebo_plugins//worlds/gazebo_ros_diff_drive_demo.world
+[15.889s] Invoked command in '/home/baguette/Documents/src/build/gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/baguette/Documents/src/install/assessment_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/baguette/Documents/src/install/assessment_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/baguette/Documents/src/install/assessment_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/baguette/Documents/src/build/gazebo_plugins

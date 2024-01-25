@@ -1,0 +1,1 @@
+/home/baguette/Documents/src/build/solution_interfaces/rosidl_typesupport_introspection_cpp/solution_interfaces/msg/detail/example__rosidl_typesupport_introspection_cpp.hpp

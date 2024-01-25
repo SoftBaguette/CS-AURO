@@ -1,0 +1,1 @@
+/home/baguette/Documents/src/assessment_interfaces/msg/RobotList.msg

@@ -1,0 +1,1 @@
+/home/baguette/Documents/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_item_manager.hpp
