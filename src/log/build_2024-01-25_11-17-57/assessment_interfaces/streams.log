@@ -1,0 +1,6 @@
+[0.284s] Invoking command in '/home/baguette/Documents/CS-AURO/src/build/assessment_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/src/build/assessment_interfaces -- -j16 -l16
+[0.770s] [0mCMake Error: The current CMakeCache.txt directory /home/baguette/Documents/CS-AURO/src/build/assessment_interfaces/CMakeCache.txt is different than the directory /home/baguette/Documents/src/build/assessment_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.770s] [0mCMake Error: The source directory "/home/baguette/Documents/src/assessment_interfaces" does not exist.
+[0.771s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.771s] gmake: *** [Makefile:2259: cmake_check_build_system] Error 1
+[1.012s] Invoked command in '/home/baguette/Documents/CS-AURO/src/build/assessment_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/CS-AURO/src/build/assessment_interfaces -- -j16 -l16
