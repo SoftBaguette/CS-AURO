@@ -69,14 +69,17 @@ class RobotController(Node):
         self.initial_y = self.get_parameter('y').get_parameter_value().double_value
         self.initial_yaw = self.get_parameter('yaw').get_parameter_value().double_value
         
+        self.is_holding_item = False
+        
+        # Navigator Stuff
         self.navigator = BasicNavigator()
         self.goal = PoseStamped()
         self.goal.header.frame_id = 'map'
         self.goal.header.stamp = self.get_clock().now().to_msg()
-        #self.goal.pose.position.x = self.inital_x
-        #self.goal.pose.position.y = self.inital_y
-        #self.goal.pose.orientation.z = 0.0
-        #self.goal.pose.orientation.w = 1.0
+        self.goal.pose.position.x = self.initial_x
+        self.goal.pose.position.y = self.initial_y
+        self.goal.pose.orientation.z = 0.0
+        self.goal.pose.orientation.w = 1.0
         self.navigator.setInitialPose(self.goal)
         
 
@@ -112,7 +115,7 @@ class RobotController(Node):
         # Publishes Twist messages (linear and angular velocities) on the /cmd_vel topic
         self.cmd_vel_publisher = self.create_publisher(Twist, 'cmd_vel', 10)
 
-        # Publishes custom StringWithPose messages on the /marker_input topic
+        # Publishes custom StringWithPose messages on the /marker_input topic NEVER AGAIN
         # self.marker_publisher = self.create_publisher(StringWithPose, '/marker_input', 10)
 
 
@@ -121,6 +124,10 @@ class RobotController(Node):
         
     def item_holder_callback(self, msg):
         self.item_holder = msg
+        try:
+            self.is_holding_item = msg.data[0].holding_item
+        except:
+            pass
 
     def odom_callback(self, msg):
         self.pose = msg.pose.pose # Store the pose in a class variable
@@ -151,44 +158,34 @@ class RobotController(Node):
 
         self.get_logger().info(f"{self.state}")
         # self.get_logger().info(f"{self.item_holder.data}")
-        self.get_logger().info(f"{self.items.data}")
+        # self.get_logger().info(f"{self.items.data}")
         
         match self.state:
 
             case State.FORWARD:
-
+                # Check if holding item
+                if self.is_holding_item:
+                    self.state = State.RETURNING
+                    return
+                
+                # Obstacle avoidance
                 if self.scan_triggered[SCAN_FRONT]:
                     self.previous_yaw = self.yaw
                     self.state = State.TURNING
-                    self.turn_angle = random.uniform(150, 170)
-                    self.turn_direction = random.choice([TURN_LEFT, TURN_RIGHT])
-                    self.get_logger().info("Detected obstacle in front, turning " + ("left" if self.turn_direction == TURN_LEFT else "right") + f" by {self.turn_angle:.2f} degrees")
-                    return
-                
-                if self.scan_triggered[SCAN_LEFT] or self.scan_triggered[SCAN_RIGHT]:
-                    self.previous_yaw = self.yaw
-                    self.state = State.TURNING
                     self.turn_angle = 45
-
-                    if self.scan_triggered[SCAN_LEFT] and self.scan_triggered[SCAN_RIGHT]:
-                        self.turn_direction = random.choice([TURN_LEFT, TURN_RIGHT])
-                        self.get_logger().info("Detected obstacle to both the left and right, turning " + ("left" if self.turn_direction == TURN_LEFT else "right") + f" by {self.turn_angle:.2f} degrees")
-                    elif self.scan_triggered[SCAN_LEFT]:
-                        self.turn_direction = TURN_RIGHT
-                        self.get_logger().info(f"Detected obstacle to the left, turning right by {self.turn_angle} degrees")
-                    else: # self.scan_triggered[SCAN_RIGHT]
-                        self.turn_direction = TURN_LEFT
-                        self.get_logger().info(f"Detected obstacle to the right, turning left by {self.turn_angle} degrees")
+                    self.turn_direction = TURN_RIGHT if self.scan_triggered[SCAN_LEFT] else TURN_LEFT
+                    self.get_logger().info("Obstacle detected, turning " + ("right" if self.turn_direction == TURN_RIGHT else "left"))
+                    msg = Twist()  # Stop the robot before turning
+                    msg.linear.x = 0.0
+                    self.cmd_vel_publisher.publish(msg)
                     return
-                
-                if len(self.items.data) > 0 and self.item_holder.data[0].holding_item == False:
+
+                # Check for items and transition to collecting if found
+                if len(self.items.data) > 0:
                     self.state = State.COLLECTING
                     return
-                
-                if len(self.items.data) > 0 and self.item_holder.data[0].holding_item == True:
-                    self.state = State.RETURNING
-                    return
 
+                # Move forward by goal distance
                 msg = Twist()
                 msg.linear.x = LINEAR_VELOCITY
                 self.cmd_vel_publisher.publish(msg)
@@ -197,70 +194,112 @@ class RobotController(Node):
                 difference_y = self.pose.position.y - self.previous_pose.position.y
                 distance_travelled = math.sqrt(difference_x ** 2 + difference_y ** 2)
 
-                # self.get_logger().info(f"Driven {distance_travelled:.2f} out of {self.goal_distance:.2f} metres")
-
                 if distance_travelled >= self.goal_distance:
                     self.previous_yaw = self.yaw
                     self.state = State.TURNING
-                    self.turn_angle = random.uniform(30, 150)
+                    self.turn_angle = random.uniform(45, 180)
                     self.turn_direction = random.choice([TURN_LEFT, TURN_RIGHT])
                     self.get_logger().info("Goal reached, turning " + ("left" if self.turn_direction == TURN_LEFT else "right") + f" by {self.turn_angle:.2f} degrees")
+                return
+
+
 
             case State.TURNING:
-
-                if len(self.items.data) > 0 and self.item_holder.data[0].holding_item == False:
-                    self.state = State.COLLECTING
-                    return
-
                 msg = Twist()
+                msg.linear.x = 0.0  # Stop forward movement
                 msg.angular.z = self.turn_direction * ANGULAR_VELOCITY
                 self.cmd_vel_publisher.publish(msg)
 
-                # self.get_logger().info(f"Turned {math.degrees(math.fabs(yaw_difference)):.2f} out of {self.turn_angle:.2f} degrees")
-
-                yaw_difference = angles.normalize_angle(self.yaw - self.previous_yaw)                
-
+                yaw_difference = angles.normalize_angle(self.yaw - self.previous_yaw)
+                
+                # DETECTED ITEM WHILE TURNING AND ITS NOT HOLDING ONE, GO FETCH IT DOGGY
+                if len(self.items.data) > 0 and self.is_holding_item == False:
+                    self.state = State.COLLECTING
+                    return
+                
                 if math.fabs(yaw_difference) >= math.radians(self.turn_angle):
                     self.previous_pose = self.pose
                     self.goal_distance = random.uniform(1.0, 2.0)
                     self.state = State.FORWARD
                     self.get_logger().info(f"Finished turning, driving forward by {self.goal_distance:.2f} metres")
+                return
+            
+            
 
             case State.COLLECTING:
+                
+                if self.is_holding_item:
+                    self.state = State.RETURNING
+                    return
 
+                # Obstacle avoidance
+                if self.scan_triggered[SCAN_FRONT]:
+                    self.previous_yaw = self.yaw
+                    self.state = State.TURNING
+                    self.turn_angle = 45
+                    self.turn_direction = TURN_RIGHT if self.scan_triggered[SCAN_LEFT] else TURN_LEFT
+                    self.get_logger().info("Obstacle detected while collecting, turning " + ("right" if self.turn_direction == TURN_RIGHT else "left"))
+                    msg = Twist()  # Stop the robot before turning
+                    msg.linear.x = 0.0
+                    self.cmd_vel_publisher.publish(msg)
+                    return
+
+                # No items / item right in front of it | go to FORWARD state
                 if len(self.items.data) == 0:
-                    self.previous_pose = self.pose
                     self.state = State.FORWARD
                     return
-                
-                item = self.items.data[0]
+                else:
+                    # Filter items by color
+                    blue_items = [item for item in self.items.data if item.colour == 'BLUE']
+                    red_items = [item for item in self.items.data if item.colour == 'RED']
+                    green_items = [item for item in self.items.data if item.colour == 'GREEN']
 
-                estimated_distance = 69.0 * float(item.diameter) ** -0.89
+                # Go to the closest blue item (largest diameter)
+                if blue_items:
+                    item = max(blue_items, key=lambda x: x.diameter)
+                    msg = Twist()
+                    msg.linear.x = LINEAR_VELOCITY
+                    msg.angular.z = item.x / 320.0
+                    self.cmd_vel_publisher.publish(msg)
+                # No blue, so go green    
+                elif green_items:
+                    item = max(green_items, key=lambda x: x.diameter)
+                    msg = Twist()
+                    msg.linear.x = LINEAR_VELOCITY
+                    msg.angular.z = item.x / 320.0
+                    self.cmd_vel_publisher.publish(msg)
+                # No green, so go red
+                elif red_items:
+                    item = max(red_items, key=lambda x: x.diameter)
+                    msg = Twist()
+                    msg.linear.x = LINEAR_VELOCITY
+                    msg.angular.z = item.x / 320.0
+                    self.cmd_vel_publisher.publish(msg)
+                # There are no items. but we filtered, its like a priority system that gets blue first, green after, red last
+                else:        
+                    self.get_logger().info("No items found, transitioning back to FORWARD state")
+                    self.previous_pose = self.pose
+                    self.state = State.FORWARD
+                return
 
-                msg = Twist()
-                msg.linear.x = 0.25 * estimated_distance
-                msg.angular.z = item.x / 320.0
 
-                self.cmd_vel_publisher.publish(msg)
                 
             case State.RETURNING:
-                    self.navigator.goToPose(self.goal)
-                    
-                    if not self.navigator.isTaskComplete():
-                        feedback = self.navigator.getFeedback()
-                        print('Estimated time of arrival: ' + '{0:.0f}'.format(Duration.from_msg(feedback.estimated_time_remaining).nanoseconds / 1e9) + ' seconds')
-                    else:
-                        result = self.navigator.getResult()
-                        
-                        if result == TaskResult.SUCCEEDED:
-                            print('Goal Succeeded!')
-                            self.state = State.FORWARD
-                        elif result == TaskResult.CANCELED:
-                            print('Goal was canceled!')
-                        elif result == TaskResult.FAILED:
-                            print('Goal failed!')
-                        else:
-                            print('Goal has an invalid return status!')
+                self.navigator.goToPose(self.goal)
+
+                if not self.is_holding_item:
+                    self.navigator.cancelTask()
+                    self.previous_yaw = self.yaw
+                    self.state = State.TURNING
+                    self.turn_angle = random.uniform(180, 260)
+                    self.get_logger().info(f"Item delivered, turning randomly by {self.turn_angle:.2f} degrees")
+                    return
+
+                # Optionally, you can add logic here to check if the task is complete
+                # and handle different outcomes (succeeded, failed, etc.)
+
+                return
+
                 
             case _:
                 pass
