@@ -8,7 +8,9 @@ params/custom_nav2_params_namespaced.yaml
 resource/solution
 solution/__init__.py
 solution/data_logger.py
+solution/robot_controller copy.py
 solution/robot_controller.py
+solution/sscode.py
 solution.egg-info/PKG-INFO
 solution.egg-info/SOURCES.txt
 solution.egg-info/dependency_links.txt

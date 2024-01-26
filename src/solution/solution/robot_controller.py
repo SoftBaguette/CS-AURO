@@ -4,19 +4,21 @@ import rclpy
 from rclpy.node import Node
 from rclpy.signals import SignalHandlerOptions
 from rclpy.executors import ExternalShutdownException
+from rclpy.duration import Duration
 from rclpy.qos import QoSPresetProfiles
 
-from geometry_msgs.msg import Twist, Pose
-from nav_msgs.msg import Odometry
-from sensor_msgs.msg import LaserScan
 from assessment_interfaces.msg import ItemList, ItemHolders
+from nav_msgs.msg import Odometry
+from geometry_msgs.msg import Twist, Pose, PoseStamped
+from sensor_msgs.msg import LaserScan
+from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 
 from tf_transformations import euler_from_quaternion
 import angles
 
 from enum import Enum
-import random
 import math
+import random
 
 LINEAR_VELOCITY  = 0.3 # Metres per second
 ANGULAR_VELOCITY = 0.5 # Radians per second
@@ -36,6 +38,7 @@ class State(Enum):
     FORWARD = 0
     TURNING = 1
     COLLECTING = 2
+    RETURNING = 3
 
 class RobotController(Node):
 
@@ -53,6 +56,29 @@ class RobotController(Node):
         self.goal_distance = random.uniform(1.0, 2.0) # Goal distance to travel in FORWARD state
         self.scan_triggered = [False] * 4 # Boolean value for each of the 4 LiDAR sensor sectors. True if obstacle detected within SCAN_THRESHOLD
         self.items = ItemList()
+        
+        # Creates a timer that calls the control_loop method repeatedly
+        self.timer_period = 0.1 # 100 milliseconds = 10 Hz
+        self.timer = self.create_timer(self.timer_period, self.control_loop)
+
+        # Initial pose parameters
+        self.declare_parameter('x', 0.0)
+        self.declare_parameter('y', 0.0)
+        self.declare_parameter('yaw', 0.0)
+        self.initial_x = self.get_parameter('x').get_parameter_value().double_value
+        self.initial_y = self.get_parameter('y').get_parameter_value().double_value
+        self.initial_yaw = self.get_parameter('yaw').get_parameter_value().double_value
+        
+        self.navigator = BasicNavigator()
+        self.goal = PoseStamped()
+        self.goal.header.frame_id = 'map'
+        self.goal.header.stamp = self.get_clock().now().to_msg()
+        #self.goal.pose.position.x = self.inital_x
+        #self.goal.pose.position.y = self.inital_y
+        #self.goal.pose.orientation.z = 0.0
+        #self.goal.pose.orientation.w = 1.0
+        self.navigator.setInitialPose(self.goal)
+        
 
         self.item_subscriber = self.create_subscription(
             ItemList,
@@ -89,17 +115,6 @@ class RobotController(Node):
         # Publishes custom StringWithPose messages on the /marker_input topic
         # self.marker_publisher = self.create_publisher(StringWithPose, '/marker_input', 10)
 
-        # Creates a timer that calls the control_loop method repeatedly
-        self.timer_period = 0.1 # 100 milliseconds = 10 Hz
-        self.timer = self.create_timer(self.timer_period, self.control_loop)
-
-        # Initial pose parameters
-        self.declare_parameter('x', 0.0)
-        self.declare_parameter('y', 0.0)
-        self.declare_parameter('yaw', 0.0)
-        self.initial_x = self.get_parameter('x').get_parameter_value().double_value
-        self.initial_y = self.get_parameter('y').get_parameter_value().double_value
-        self.initial_yaw = self.get_parameter('yaw').get_parameter_value().double_value
 
     def item_callback(self, msg):
         self.items = msg
@@ -169,6 +184,10 @@ class RobotController(Node):
                 if len(self.items.data) > 0 and self.item_holder.data[0].holding_item == False:
                     self.state = State.COLLECTING
                     return
+                
+                if len(self.items.data) > 0 and self.item_holder.data[0].holding_item == True:
+                    self.state = State.RETURNING
+                    return
 
                 msg = Twist()
                 msg.linear.x = LINEAR_VELOCITY
@@ -223,7 +242,26 @@ class RobotController(Node):
                 msg.angular.z = item.x / 320.0
 
                 self.cmd_vel_publisher.publish(msg)
-
+                
+            case State.RETURNING:
+                    self.navigator.goToPose(self.goal)
+                    
+                    if not self.navigator.isTaskComplete():
+                        feedback = self.navigator.getFeedback()
+                        print('Estimated time of arrival: ' + '{0:.0f}'.format(Duration.from_msg(feedback.estimated_time_remaining).nanoseconds / 1e9) + ' seconds')
+                    else:
+                        result = self.navigator.getResult()
+                        
+                        if result == TaskResult.SUCCEEDED:
+                            print('Goal Succeeded!')
+                            self.state = State.FORWARD
+                        elif result == TaskResult.CANCELED:
+                            print('Goal was canceled!')
+                        elif result == TaskResult.FAILED:
+                            print('Goal failed!')
+                        else:
+                            print('Goal has an invalid return status!')
+                
             case _:
                 pass
 

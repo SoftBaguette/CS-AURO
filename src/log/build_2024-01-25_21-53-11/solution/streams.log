@@ -1,0 +1,22 @@
+[1.780s] Invoking command in '/home/baguette/Documents/src/build/solution': PYTHONPATH=/home/baguette/Documents/src/build/solution/prefix_override:/home/baguette/Documents/src/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/solution/build --no-deps install_data
+[2.005s] running develop
+[2.005s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.005s]   warnings.warn(
+[2.006s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.006s]   warnings.warn(
+[2.177s] running egg_info
+[2.177s] writing solution.egg-info/PKG-INFO
+[2.178s] writing dependency_links to solution.egg-info/dependency_links.txt
+[2.178s] writing entry points to solution.egg-info/entry_points.txt
+[2.178s] writing requirements to solution.egg-info/requires.txt
+[2.178s] writing top-level names to solution.egg-info/top_level.txt
+[2.180s] reading manifest file 'solution.egg-info/SOURCES.txt'
+[2.180s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[2.181s] running build_ext
+[2.182s] Creating /home/baguette/Documents/src/install/solution/lib/python3.10/site-packages/solution.egg-link (link to .)
+[2.182s] Installing data_logger script to /home/baguette/Documents/src/install/solution/lib/solution
+[2.182s] Installing robot_controller script to /home/baguette/Documents/src/install/solution/lib/solution
+[2.182s] 
+[2.183s] Installed /home/baguette/Documents/src/build/solution
+[2.183s] running install_data
+[2.286s] Invoked command in '/home/baguette/Documents/src/build/solution' returned '0': PYTHONPATH=/home/baguette/Documents/src/build/solution/prefix_override:/home/baguette/Documents/src/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/solution/build --no-deps install_data

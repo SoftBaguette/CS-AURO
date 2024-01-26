@@ -1,0 +1,5 @@
+self.item_holder.data = [assessment_interfaces.msg.ItemHolder(robot_id='robot1', holding_item=False, item_colour='', item_value=0)]
+self.items.data =   [assessment_interfaces.msg.Item(x=-3, y=3, diameter=56, colour='RED', value=5),
+                    assessment_interfaces.msg.Item(x=216, y=4, diameter=64, colour='RED', value=5),
+                    assessment_interfaces.msg.Item(x=113, y=4, diameter=102, colour='RED', value=5),
+                    assessment_interfaces.msg.Item(x=-48, y=3, diameter=18, colour='BLUE', value=15)]
