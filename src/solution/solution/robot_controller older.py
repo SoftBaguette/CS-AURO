@@ -4,13 +4,14 @@ import rclpy
 from rclpy.node import Node
 from rclpy.signals import SignalHandlerOptions
 from rclpy.executors import ExternalShutdownException
+from rclpy.duration import Duration
 from rclpy.qos import QoSPresetProfiles
 
 from assessment_interfaces.msg import ItemList, ItemHolders
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist, Pose, PoseStamped
 from sensor_msgs.msg import LaserScan
-from nav2_simple_commander.robot_navigator import BasicNavigator
+from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 
 from tf_transformations import euler_from_quaternion
 import angles
@@ -44,8 +45,8 @@ class RobotController(Node):
     def __init__(self):
         super().__init__('robot_controller')
         
-        self.robot_id = self.get_namespace().strip('/')  # Each robot knows who they are, to avoid conflicts in multi-robot simulations
-        # self.get_logger().info(f'{self.robot_id}')
+        self.robot_id = self.get_namespace().strip('/')  # Each robot knows who they are
+        self.get_logger().info(f'{self.robot_id}')
         
         self.previous_state = None
         
@@ -57,6 +58,7 @@ class RobotController(Node):
         self.previous_yaw = 0.0 # Snapshot of the angle for comparison against future angles
         self.turn_angle = 0.0 # Relative angle to turn to in the TURNING state
         self.turn_direction = TURN_LEFT # Direction to turn in the TURNING state
+        self.goal_distance = random.uniform(1.0, 2.0) # Goal distance to travel in FORWARD state
         self.scan_triggered = [False] * 4 # Boolean value for each of the 4 LiDAR sensor sectors. True if obstacle detected within SCAN_THRESHOLD
         self.items = ItemList()
         
@@ -118,6 +120,9 @@ class RobotController(Node):
         # Publishes Twist messages (linear and angular velocities) on the /cmd_vel topic
         self.cmd_vel_publisher = self.create_publisher(Twist, 'cmd_vel', 10)
 
+        # Publishes custom StringWithPose messages on the /marker_input topic NEVER AGAIN
+        # self.marker_publisher = self.create_publisher(StringWithPose, '/marker_input', 10)
+
 
     def item_callback(self, msg):
         self.items = msg
@@ -129,6 +134,7 @@ class RobotController(Node):
             for data in msg.data:
                 if data.robot_id == self.robot_id:
                     self.is_holding_item = data.holding_item
+            #self.is_holding_item = msg.data[0].holding_item
         except:
             pass
         
@@ -160,16 +166,19 @@ class RobotController(Node):
     # Control loop for the FSM - called periodically by self.timer
     def control_loop(self):
 
-        # Logs State, only if it changed (avoid cluttering the log)
         if self.state != self.previous_state:
             self.get_logger().info(f"{self.state}")
             self.previous_state = self.state
         
+        # self.get_logger().info(f"{self.state}")
+        # self.get_logger().info(f'{self.item_holder.data}')
+        # self.get_logger().info(f"{self.item_holder.data}")
+        # self.get_logger().info(f"{self.items.data}")
         
         match self.state:
 
             case State.FORWARD:
-                # If it's holding an item, it goes to returning state
+                # Check if holding item
                 if self.is_holding_item:
                     self.state = State.RETURNING
                     return
@@ -186,12 +195,12 @@ class RobotController(Node):
                     self.cmd_vel_publisher.publish(msg)
                     return
 
-                # If there's an item in sight, go to collecting state
+                # Check for items and transition to collecting if found
                 if len(self.items.data) > 0:
                     self.state = State.COLLECTING
                     return
 
-                # Move forward
+                # Move forward by goal distance
                 msg = Twist()
                 msg.linear.x = LINEAR_VELOCITY
                 self.cmd_vel_publisher.publish(msg)
@@ -200,19 +209,24 @@ class RobotController(Node):
                 difference_y = self.pose.position.y - self.previous_pose.position.y
                 distance_travelled = math.sqrt(difference_x ** 2 + difference_y ** 2)
 
-                # No need for goal distance comparison, if its moved for 1 meter and no items were detected, it means there's no item in trajectory
+                # No need for goal distance comparison, if its moving forward and didnt find item
+                # for distance of 1, it means there's no item in sight and its moving without purpose
                 if distance_travelled >= 1:
                     self.previous_yaw = self.yaw
                     self.state = State.TURNING
                     self.turn_angle = random.uniform(45, 180)
                     self.turn_direction = random.choice([TURN_LEFT, TURN_RIGHT])
-                    self.get_logger().info("No items in sight, turning " + ("left" if self.turn_direction == TURN_LEFT else "right") + f" by {self.turn_angle:.2f} degrees")
+                    self.get_logger().info("Goal reached, turning " + ("left" if self.turn_direction == TURN_LEFT else "right") + f" by {self.turn_angle:.2f} degrees")
                 return
 
 
 
             case State.TURNING:
                 
+                # It's holding item, no need to turn, nav2 will bring it back home.
+                if self.is_holding_item:
+                    self.state = State.RETURNING
+                    return
                 
                 msg = Twist()
                 msg.linear.x = 0.0  # Stop forward movement
@@ -221,21 +235,22 @@ class RobotController(Node):
 
                 yaw_difference = angles.normalize_angle(self.yaw - self.previous_yaw)
                 
-                # If there's an item in sight, and it's not holding one, go to collecting state
+                # DETECTED ITEM WHILE TURNING AND ITS NOT HOLDING ONE, GO FETCH IT DOGGY
                 if len(self.items.data) > 0 and self.is_holding_item == False:
                     self.state = State.COLLECTING
                     return
                 
                 if math.fabs(yaw_difference) >= math.radians(self.turn_angle):
                     self.previous_pose = self.pose
+                    self.goal_distance = random.uniform(1.0, 2.0)
                     self.state = State.FORWARD
-                    self.get_logger().info(f"Finished turning, driving forward now.")
+                    self.get_logger().info(f"Finished turning, driving forward by {self.goal_distance:.2f} metres")
                 return
+            
             
 
             case State.COLLECTING:
                 
-                # It's holding an item, no need to stay in this state now.
                 if self.is_holding_item:
                     self.state = State.RETURNING
                     return
@@ -293,39 +308,20 @@ class RobotController(Node):
 
                 
             case State.RETURNING:
-                # Check if the robot is still holding an item
+                self.navigator.goToPose(self.goal)
+
                 if not self.is_holding_item:
-                    # Cancel any ongoing navigation task
                     self.navigator.cancelTask()
-
-                    # Log the completion of the item delivery
-                    self.get_logger().info("Item delivered, stopping navigation")
-
-                    # Change state to turning for a random rotation
                     self.previous_yaw = self.yaw
                     self.state = State.TURNING
                     self.turn_angle = random.uniform(180, 260)
+                    self.get_logger().info(f"Item delivered, turning randomly by {self.turn_angle:.2f} degrees")
                     return
 
-                # Obstacle avoidance | Mostly so it doesnt collide against other robots
-                if self.scan_triggered[SCAN_FRONT]:
-                    # Cancel the current navigation task
-                    self.navigator.cancelTask()
+                # Optionally, you can add logic here to check if the task is complete
+                # and handle different outcomes (succeeded, failed, etc.)
 
-                    # Log the obstacle detection and initiate avoidance
-                    self.get_logger().info("Obstacle detected while returning, executing avoidance maneuver")
-                    
-                    self.previous_yaw = self.yaw
-                    self.state = State.TURNING
-                    self.turn_angle = 45
-                    self.turn_direction = TURN_RIGHT if self.scan_triggered[SCAN_LEFT] else TURN_LEFT
-                    msg = Twist()  # Stop the robot before turning
-                    msg.linear.x = 0.0
-                    self.cmd_vel_publisher.publish(msg)
-                    return
-
-                # Continue navigation to the goal
-                self.navigator.goToPose(self.goal)
+                return
 
                 
             case _:

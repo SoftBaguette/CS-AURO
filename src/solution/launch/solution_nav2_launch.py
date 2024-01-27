@@ -40,9 +40,9 @@ def robot_controller_actions(context : LaunchContext):
                 # prefix=['xfce4-terminal --execute'], # Opens in new window
                 # prefix=['gnome-terminal --tab --execute'], # Opens in new tab
                 # prefix=['gnome-terminal --window --execute'], # Opens in new window
-                prefix=['konsole --new-tab -e'], # Opens in new window
                 # prefix=['wt.exe --window 0 new-tab wsl.exe -e bash -ic'], # Opens in new tab
                 # prefix=['wt.exe wsl.exe -e bash -ic'], # Opens in new window
+                # prefix=['konsole --new-tab -e'], # Opens in new window (exclusive to my workspace)
                 output='screen',
                 parameters=[initial_poses[robot_name]]),
 
@@ -69,7 +69,7 @@ def generate_launch_description():
 
     declare_num_robots_cmd = DeclareLaunchArgument(
         'num_robots',
-        default_value='1',
+        default_value='3',
         description='Number of robots to spawn')
     
     declare_random_seed_cmd = DeclareLaunchArgument(
