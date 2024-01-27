@@ -1,0 +1,22 @@
+[1.994s] Invoking command in '/home/baguette/Documents/src/build/solution': PYTHONPATH=/home/baguette/Documents/src/build/solution/prefix_override:/home/baguette/Documents/src/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/solution/build --no-deps install_data
+[2.254s] running develop
+[2.254s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.255s]   warnings.warn(
+[2.256s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.256s]   warnings.warn(
+[2.456s] running egg_info
+[2.457s] writing solution.egg-info/PKG-INFO
+[2.457s] writing dependency_links to solution.egg-info/dependency_links.txt
+[2.457s] writing entry points to solution.egg-info/entry_points.txt
+[2.457s] writing requirements to solution.egg-info/requires.txt
+[2.457s] writing top-level names to solution.egg-info/top_level.txt
+[2.459s] reading manifest file 'solution.egg-info/SOURCES.txt'
+[2.460s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[2.461s] running build_ext
+[2.462s] Creating /home/baguette/Documents/src/install/solution/lib/python3.10/site-packages/solution.egg-link (link to .)
+[2.462s] Installing data_logger script to /home/baguette/Documents/src/install/solution/lib/solution
+[2.463s] Installing robot_controller script to /home/baguette/Documents/src/install/solution/lib/solution
+[2.463s] 
+[2.463s] Installed /home/baguette/Documents/src/build/solution
+[2.464s] running install_data
+[2.464s] copying launch/solution_nav2_launch.py -> /home/baguette/Documents/src/install/solution/share/solution/launch/

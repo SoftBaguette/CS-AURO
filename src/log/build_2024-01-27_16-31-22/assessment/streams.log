@@ -1,0 +1,23 @@
+[1.779s] Invoking command in '/home/baguette/Documents/src/build/assessment': PYTHONPATH=/home/baguette/Documents/src/build/assessment/prefix_override:/home/baguette/Documents/src/install/assessment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/assessment/build --no-deps install_data
+[1.992s] running develop
+[1.992s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.993s]   warnings.warn(
+[1.994s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.994s]   warnings.warn(
+[2.149s] running egg_info
+[2.149s] writing assessment.egg-info/PKG-INFO
+[2.149s] writing dependency_links to assessment.egg-info/dependency_links.txt
+[2.149s] writing entry points to assessment.egg-info/entry_points.txt
+[2.150s] writing requirements to assessment.egg-info/requires.txt
+[2.150s] writing top-level names to assessment.egg-info/top_level.txt
+[2.151s] reading manifest file 'assessment.egg-info/SOURCES.txt'
+[2.152s] writing manifest file 'assessment.egg-info/SOURCES.txt'
+[2.153s] running build_ext
+[2.153s] Creating /home/baguette/Documents/src/install/assessment/lib/python3.10/site-packages/assessment.egg-link (link to .)
+[2.154s] Installing home_zone_sensor script to /home/baguette/Documents/src/install/assessment/lib/assessment
+[2.154s] Installing item_manager script to /home/baguette/Documents/src/install/assessment/lib/assessment
+[2.154s] Installing item_sensor script to /home/baguette/Documents/src/install/assessment/lib/assessment
+[2.154s] Installing robot_sensor script to /home/baguette/Documents/src/install/assessment/lib/assessment
+[2.155s] 
+[2.155s] Installed /home/baguette/Documents/src/build/assessment
+[2.155s] running install_data

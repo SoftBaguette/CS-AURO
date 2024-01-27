@@ -1,0 +1,19 @@
+[1.749s] Invoking command in '/home/baguette/Documents/src/build/tf_transformations': PYTHONPATH=/home/baguette/Documents/src/build/tf_transformations/prefix_override:/home/baguette/Documents/src/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/tf_transformations/build --no-deps install_data
+[1.993s] running develop
+[1.993s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.993s]   warnings.warn(
+[1.994s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.994s]   warnings.warn(
+[2.177s] running egg_info
+[2.177s] writing tf_transformations.egg-info/PKG-INFO
+[2.177s] writing dependency_links to tf_transformations.egg-info/dependency_links.txt
+[2.178s] writing requirements to tf_transformations.egg-info/requires.txt
+[2.178s] writing top-level names to tf_transformations.egg-info/top_level.txt
+[2.180s] reading manifest file 'tf_transformations.egg-info/SOURCES.txt'
+[2.181s] writing manifest file 'tf_transformations.egg-info/SOURCES.txt'
+[2.182s] running build_ext
+[2.182s] Creating /home/baguette/Documents/src/install/tf_transformations/lib/python3.10/site-packages/tf-transformations.egg-link (link to .)
+[2.183s] 
+[2.183s] Installed /home/baguette/Documents/src/build/tf_transformations
+[2.184s] running install_data
+[2.454s] Invoked command in '/home/baguette/Documents/src/build/tf_transformations' returned '0': PYTHONPATH=/home/baguette/Documents/src/build/tf_transformations/prefix_override:/home/baguette/Documents/src/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/tf_transformations/build --no-deps install_data

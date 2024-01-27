@@ -1,0 +1,6 @@
+gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libignition-math6.so.6.15.0', needed by 'libgazebo_ros_item_manager.so'. Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/gazebo_ros_item_manager.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libignition-math6.so.6.15.0', needed by 'libgazebo_ros_diff_drive.so'. Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gazebo_ros_diff_drive.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

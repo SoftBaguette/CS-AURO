@@ -42,7 +42,7 @@ def robot_controller_actions(context : LaunchContext):
                 # prefix=['gnome-terminal --window --execute'], # Opens in new window
                 # prefix=['wt.exe --window 0 new-tab wsl.exe -e bash -ic'], # Opens in new tab
                 # prefix=['wt.exe wsl.exe -e bash -ic'], # Opens in new window
-                # prefix=['konsole --new-tab -e'], # Opens in new window (exclusive to my workspace)
+                prefix=['konsole --new-tab -e'], # Opens in new window (exclusive to my workspace)
                 output='screen',
                 parameters=[initial_poses[robot_name]]),
 
@@ -74,7 +74,7 @@ def generate_launch_description():
     
     declare_random_seed_cmd = DeclareLaunchArgument(
         'random_seed',
-        default_value='0',
+        default_value='9',
         description='Random number seed for item manager')
     
     declare_experiment_duration_cmd = DeclareLaunchArgument(

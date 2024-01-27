@@ -3,3 +3,15 @@ self.items.data =   [assessment_interfaces.msg.Item(x=-3, y=3, diameter=56, colo
                     assessment_interfaces.msg.Item(x=216, y=4, diameter=64, colour='RED', value=5),
                     assessment_interfaces.msg.Item(x=113, y=4, diameter=102, colour='RED', value=5),
                     assessment_interfaces.msg.Item(x=-48, y=3, diameter=18, colour='BLUE', value=15)]
+
+issue:
+
+in multi robot system, when 1 robot picks up an item it registers as if all of them are holding_item
+make it so each robot has its own state, cuz when 1 picks up an item, they both go to returning state
+also with obstacle avoidance, when 1 sees an obstacle, all the bots act as if there's an obstacle
+
+make variables for linear and angular velocity as well
+
+also how do I cancel the gotopose? so it stops going to home once the item is dropped off
+
+Need to have obstacle avoidance even in fetching state

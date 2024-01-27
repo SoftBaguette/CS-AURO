@@ -1,0 +1,24 @@
+[2.066s] Invoking command in '/home/baguette/Documents/src/build/assessment': PYTHONPATH=/home/baguette/Documents/src/build/assessment/prefix_override:/home/baguette/Documents/src/install/assessment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/assessment/build --no-deps install_data
+[2.323s] running develop
+[2.323s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.323s]   warnings.warn(
+[2.324s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.324s]   warnings.warn(
+[2.511s] running egg_info
+[2.511s] writing assessment.egg-info/PKG-INFO
+[2.511s] writing dependency_links to assessment.egg-info/dependency_links.txt
+[2.511s] writing entry points to assessment.egg-info/entry_points.txt
+[2.511s] writing requirements to assessment.egg-info/requires.txt
+[2.512s] writing top-level names to assessment.egg-info/top_level.txt
+[2.514s] reading manifest file 'assessment.egg-info/SOURCES.txt'
+[2.515s] writing manifest file 'assessment.egg-info/SOURCES.txt'
+[2.516s] running build_ext
+[2.516s] Creating /home/baguette/Documents/src/install/assessment/lib/python3.10/site-packages/assessment.egg-link (link to .)
+[2.517s] Installing home_zone_sensor script to /home/baguette/Documents/src/install/assessment/lib/assessment
+[2.518s] Installing item_manager script to /home/baguette/Documents/src/install/assessment/lib/assessment
+[2.518s] Installing item_sensor script to /home/baguette/Documents/src/install/assessment/lib/assessment
+[2.518s] Installing robot_sensor script to /home/baguette/Documents/src/install/assessment/lib/assessment
+[2.519s] 
+[2.519s] Installed /home/baguette/Documents/src/build/assessment
+[2.519s] running install_data
+[2.669s] Invoked command in '/home/baguette/Documents/src/build/assessment' returned '0': PYTHONPATH=/home/baguette/Documents/src/build/assessment/prefix_override:/home/baguette/Documents/src/install/assessment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/assessment/build --no-deps install_data
