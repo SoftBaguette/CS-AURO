@@ -229,7 +229,7 @@ class RobotController(Node):
                 if math.fabs(yaw_difference) >= math.radians(self.turn_angle):
                     self.previous_pose = self.pose
                     self.state = State.FORWARD
-                    self.get_logger().info(f"Finished turning, driving forward now.")
+                    self.get_logger().info("Finished turning, driving forward now.")
                 return
             
 
@@ -257,11 +257,11 @@ class RobotController(Node):
                     self.state = State.FORWARD
                     return
                 else:
-                    # Filter items by color
-                    blue_items = [item for item in self.items.data if item.colour == 'BLUE']
-                    red_items = [item for item in self.items.data if item.colour == 'RED']
-                    green_items = [item for item in self.items.data if item.colour == 'GREEN']
-
+                    # Filter items by color, and y coordinates (item.y <= 5 ensures it doesnt chase another robot)
+                    blue_items = [item for item in self.items.data if item.colour == 'BLUE' and item.y <= 5]
+                    red_items = [item for item in self.items.data if item.colour == 'RED' and item.y <= 5]
+                    green_items = [item for item in self.items.data if item.colour == 'GREEN' and item.y <= 5]
+                    
                 # Go to the closest blue item (largest diameter)
                 if blue_items:
                     item = max(blue_items, key=lambda x: x.diameter)

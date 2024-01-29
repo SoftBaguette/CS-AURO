@@ -43,7 +43,7 @@ latex_results = pd.DataFrame({
 })
 
 # Save results to CSV for LaTeX
-latex_results.to_csv('performance_results_for_latex.csv', index=False)
+latex_results.to_csv('performance_results_for_latex2.csv', index=False)
 
 # Plotting
 metrics = ['Red Count', 'Green Count', 'Blue Count', 'Total Count']
@@ -56,4 +56,4 @@ plt.ylabel('Average Counts')
 plt.title('Performance Metrics of Autonomous Robots')
 plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig('performance_metrics.png')
+plt.savefig('performance_metrics2.png')

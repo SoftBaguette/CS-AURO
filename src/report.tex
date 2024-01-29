@@ -22,7 +22,7 @@
 
 \section{Design}
 \subsection{System Overview}
-In the design of my autonomous robot, I implemented a modular approach with the TurtleBot3, using the ROS2 framework. At the heart of the design is a finite state machine (FSM), which contains the robot's states - FORWARD, TURNING, COLLECTING, and RETURNING. This FSM was chosen for its ability to provide structured yet flexible control, which is essential for navigation and adapting to dynamic task requirements. The keys to perception were the LiDAR and camera sensors, which are essential for effective operation. Their integration within ROS2 is indispensable for the task.
+In the design of my autonomous robot, I implemented a modular approach with the TurtleBot3, using the ROS2 framework \cite{ROS2HumbleHawksbill2024}. At the heart of the design is a finite state machine (FSM), which contains the robot's states - FORWARD, TURNING, COLLECTING, and RETURNING. This FSM was chosen for its ability to provide structured yet flexible control, which is essential for navigation and adapting to dynamic task requirements. The keys to perception were the LiDAR and camera sensors, which are essential for effective operation. Their integration within ROS2 is indispensable for the task.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\linewidth]{high-level system diagram.png}}
@@ -65,7 +65,9 @@ Integrating sensors like LiDAR and cameras is key to the robot's perception capa
 Movement control within the system is made through the generation of Twist messages. Those messages determine the robot's linear and angular velocities, and are based on the current state of the FSM and the processed sensor data. This shows a direct link between sensory input and actuator output.
 
 \subsection{Challenges and Solutions}
-During the early phases of the development process, I started with designing and implementing a system for a single robot. This approach, however, later caused issues whilst integrating the multi-robot solution. One such issue was all robots transitioning to the RETURNING state once one of them collected an item. This was due to the lack of optimisation for a multi-robot system. For instance, the \texttt{item\_holder\_callback} method was returning all the bots' information simultaneously, which caused the issue. The solution was to ensure each robot received and acted upon only the information relevant to itself. This change made the system effectively manage the state transitions for each robot independently and further align with the demands of a multi-robot system.
+During the early phases of the development process, I started with designing and implementing a system for a single robot. This approach, however, later caused issues whilst integrating the multi-robot solution. One such issue was all robots transitioning to the RETURNING state once one of them collected an item. This was due to the lack of optimisation for a multi-robot system. For instance, the \texttt{item\_holder\_callback} method was returning all the bots' information simultaneously, which caused the issue. The solution was to ensure each robot received and acted upon only the information relevant to itself. This change made the system effectively manage the state transitions for each robot independently and further align with the demands of a multi-robot system. 
+
+Another issue encountered when first integrating the multi-robot system; In certain instances, a robot would enter the COLLECTING state when seeing another holding an item (RETURNING state), thus chasing it down and prematurely setting off the obstacle avoidance in both. This resulted in delays and slower performance. The solution was to check the vertical coordinates of the item, and determine whether it was being held by another robot based from that information.
 
 \section{Analysis}
 \subsection{Experimental Approach}
@@ -74,36 +76,43 @@ To evaluate the performance and efficiency of the system, I've taken a comprehen
 \begin{itemize}
     \item \textbf{Data Logging}: Extensive data logging into the terminal was performed to capture real-time operational details of the system - This helped find bugs and solve issues.
     \item \textbf{Visual Inspections}: During simulations, visual inspections / Analysis were done to identify and fix issues in the system's behavior.
-    \item \textbf{Simulation Analysis}: Detailed analysis of data logs from 10 different simulations, each lasting 5 minutes in real-time (approximately 1:30 - 2:00 minutes in simulation time in my environment). These simulations each used different item manager 'seeds' to assess the system's efficiency and adaptability under different conditions.
+    \item \textbf{Simulation Analysis}: Detailed analysis of data logs from 10 different simulations, each lasting 5 minutes in real-time (aprox. 2 minutes sim time). The simulations used different item manager 'seeds' to assess the system's efficiency. This analysis was conducted both before and after implementing a fix for the .
+
 \end{itemize}
 Repeated trials were also conducted to ensure the reliability and consistency of the system’s performance across various scenarios.
 
 
 \subsection{Results}
-The results of the experiments are presented in Fig.~\ref{fig:performancegraph} and Table~\ref{tab:performance}. 
+The results of the experiments, both pre- and post-fix, are presented in Table~\ref{tab:performance}. A bar plot showcasing the comparative performance is illustrated in Fig.~\ref{fig:performancegraph}.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=\linewidth]{performance_metrics.png}}
-\caption{Bar-Plot Showcasing Performance }
+\caption{Bar-Plot Showcasing Performance (pre- and post-fix)}
 \label{fig:performancegraph}
 \end{figure}
 
 \begin{table}[htbp]
-\caption{Performance Metrics}
+\caption{Performance Metrics Comparison}
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
-Metric & Average & Standard Deviation \\
+\textbf{Metric} & \textbf{Pre-Fix} & \textbf{Post-Fix} \\
 \hline
-Red Count & 6.2 & 2.79 \\
-Green Count & 2.8 & 1.60 \\
-Blue Count & 0.6 & 0.80 \\
-Total Count & 9.6 & 2.69 \\
+Red Count & 6.2 ($\sigma$2.79) & 6.4 ($\sigma$2.65) \\
+\hline
+Green Count & 2.8 ($\sigma$1.60) & 3.2 ($\sigma$1.89) \\
+\hline
+Blue Count & 0.6 ($\sigma$0.80) & 0.8 ($\sigma$0.75) \\
+\hline
+Total Count & 9.6 ($\sigma$2.69) & 10.4 ($\sigma$2.33) \\
 \hline
 \end{tabular}
 \label{tab:performance}
 \end{center}
 \end{table}
+
+\footnotesize{Note: $\sigma$ denotes standard deviation.}
+
 
 \subsection{Results Analysis}
 
@@ -116,7 +125,7 @@ Quantitatively, the reason behind this can be understood through the visual insp
 
 During the development and testing phase, several strengths and weaknesses in the system became evident. One key strength is the design's scalability and adaptability which allowed for a smooth integration of multi-robots, capable of efficiently handling multiple tasks such as navigation, item collection and obstacle avoidance. The implementation of the FSM, shown in Fig.~\ref{fig:statemachine}, was crucial for the system, significantly contributing to its operational success.
 
-On the flip side, weaknesses were also shown in the system, especially in the context of multi-robot coordination. Notably, in rare cases, robots attempted to collect items already held by another. This behaviour stems from an oversight in the COLLECTING state's logic, which doesn't account for other robots' activities. An easy potential fix could involve considering the y-coordinate of the item; since the ground is always level in the simulation, items at a higher y-coordinate are likely being held by another robot. However, this solution might not be feasible in a more complex real-world environment with varying elevations.
+On the flip side, weaknesses were also shown in the system, especially in the context of multi-robot coordination. Notably, in some cases, robots attempted to collect items already held by another. This behaviour stems from an oversight in the COLLECTING state's logic, which didn't account for other robots' activities. The fix involved considering the y-coordinate of the item; since the ground is always level in the simulation, items at a higher y-coordinate are likely being held by another robot. However, this solution might not be feasible in a more complex real-world environment with varying elevations.
 
 Improving the system further could involve advancing the communication between robots. By sharing their current positions and the status of items they're carrying, each robot would be aware of its peers' activities. This enhancement, integrated within the ROS2 framework, would make the system even more efficient, and address a big chunk of its weaknesses.
 
@@ -193,3 +202,13 @@ Continued development and testing in a variety of environments will be essential
 %In terms of transferability to real-world scenarios, the system's reliance on accurate sensor data and the efficiency of its state transition logic are critical factors. While the simulation provides a controlled environment to test these aspects, real-world conditions often introduce complexities such as dynamic obstacles, variable lighting, and sensor noise. Addressing these challenges would require additional layers of complexity in the system's design and implementation, such as advanced sensor fusion techniques and more sophisticated decision-making algorithms to handle unpredictable environments.
 
 %Furthermore, the mechanical and hardware limitations of the TurtleBot3 platform in real-world applications, such as battery life and terrain handling capabilities, must also be considered for a successful transition from simulation to reality.
+
+%this is references.bib:
+
+%@misc{ROS2HumbleHawksbill2024,
+%  author = {{Open Robotics}},
+%  title = {{ROS 2 Humble Hawksbill Documentation}},
+%  year = {2024},
+%  howpublished = {\url{https://docs.ros.org/en/humble/}},
+%  note = {[Online; accessed 7-January-2024]}
+%}

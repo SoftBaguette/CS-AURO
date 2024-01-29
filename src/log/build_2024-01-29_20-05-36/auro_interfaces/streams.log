@@ -1,0 +1,150 @@
+[0.726s] Invoking command in '/home/baguette/Documents/src/build/auro_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/baguette/Documents/src/install/tf_transformations:/home/baguette/Documents/src/install/tf_relay:/home/baguette/Documents/src/install/solution:/home/baguette/Documents/src/install/assessment:/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/src/build/auro_interfaces -- -j16 -l16
+[1.354s] [  2%] Built target auro_interfaces__cpp
+[1.354s] [ 12%] Built target auro_interfaces__rosidl_generator_c
+[1.354s] [ 12%] Built target ament_cmake_python_symlink_auro_interfaces
+[1.354s] [ 44%] Built target auro_interfaces__rosidl_typesupport_introspection_cpp
+[1.354s] [ 44%] Built target auro_interfaces__rosidl_typesupport_fastrtps_c
+[1.354s] [ 44%] Built target auro_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.355s] [ 55%] Built target auro_interfaces__rosidl_typesupport_introspection_c
+[1.355s] [ 65%] Built target auro_interfaces__rosidl_typesupport_cpp
+[1.355s] [ 76%] Built target auro_interfaces__rosidl_typesupport_c
+[1.355s] [ 76%] Built target auro_interfaces
+[1.355s] [ 78%] Built target auro_interfaces__py
+[1.355s] [ 87%] Built target auro_interfaces__rosidl_generator_py
+[1.355s] [ 97%] Built target auro_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.355s] [ 97%] Built target auro_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.355s] [100%] Built target auro_interfaces__rosidl_typesupport_c__pyext
+[1.355s] running egg_info
+[1.355s] writing auro_interfaces.egg-info/PKG-INFO
+[1.355s] writing dependency_links to auro_interfaces.egg-info/dependency_links.txt
+[1.355s] writing top-level names to auro_interfaces.egg-info/top_level.txt
+[1.355s] reading manifest file 'auro_interfaces.egg-info/SOURCES.txt'
+[1.355s] writing manifest file 'auro_interfaces.egg-info/SOURCES.txt'
+[1.355s] [100%] Built target ament_cmake_python_build_auro_interfaces_egg
+[1.669s] Invoked command in '/home/baguette/Documents/src/build/auro_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/baguette/Documents/src/install/tf_transformations:/home/baguette/Documents/src/install/tf_relay:/home/baguette/Documents/src/install/solution:/home/baguette/Documents/src/install/assessment:/opt/ros/humble /usr/bin/cmake --build /home/baguette/Documents/src/build/auro_interfaces -- -j16 -l16
+[1.774s] Invoking command in '/home/baguette/Documents/src/build/auro_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/baguette/Documents/src/install/tf_transformations:/home/baguette/Documents/src/install/tf_relay:/home/baguette/Documents/src/install/solution:/home/baguette/Documents/src/install/assessment:/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/src/build/auro_interfaces
+[1.781s] -- Install configuration: ""
+[1.782s] -- Execute custom install script
+[1.782s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/ament_index/resource_index/rosidl_interfaces/auro_interfaces
+[1.782s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__functions.h
+[1.782s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__struct.h
+[1.783s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__type_support.h
+[1.783s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__functions.h
+[1.783s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__struct.h
+[1.783s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__type_support.h
+[1.784s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__functions.h
+[1.784s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__struct.h
+[1.784s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__type_support.h
+[1.784s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item.h
+[1.785s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item_list.h
+[1.785s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.785s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/string_with_pose.h
+[1.785s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/environment/library_path.sh
+[1.786s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/environment/library_path.dsv
+[1.786s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_c.h
+[1.786s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_c.h
+[1.787s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_fastrtps_c.h
+[1.787s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.787s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__builder.hpp
+[1.788s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__struct.hpp
+[1.789s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__traits.hpp
+[1.790s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__builder.hpp
+[1.790s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__struct.hpp
+[1.790s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__traits.hpp
+[1.790s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__builder.hpp
+[1.791s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__struct.hpp
+[1.791s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__traits.hpp
+[1.791s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item.hpp
+[1.791s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item_list.hpp
+[1.792s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/string_with_pose.hpp
+[1.792s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_cpp.hpp
+[1.792s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_cpp.hpp
+[1.792s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[1.793s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.793s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__rosidl_typesupport_introspection_c.h
+[1.793s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_c.h
+[1.793s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_c.h
+[1.793s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.794s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__rosidl_typesupport_introspection_cpp.hpp
+[1.794s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_cpp.hpp
+[1.794s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp
+[1.794s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/environment/pythonpath.sh
+[1.794s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/environment/pythonpath.dsv
+[1.794s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[1.795s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.795s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.795s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[1.795s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/__init__.py
+[1.795s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_c.c
+[1.795s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.796s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.796s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.796s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.796s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.797s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/libauro_interfaces__rosidl_generator_py.so
+[1.797s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/__init__.py
+[1.797s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_item.py
+[1.797s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_item_list.py
+[1.797s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_item_list_s.c
+[1.797s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_item_s.c
+[1.798s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_string_with_pose.py
+[1.798s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_string_with_pose_s.c
+[1.798s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.798s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.798s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.798s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/msg/StringWithPose.idl
+[1.799s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/msg/Item.idl
+[1.799s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/msg/ItemList.idl
+[1.799s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/msg/StringWithPose.msg
+[1.799s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/msg/Item.msg
+[1.799s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/msg/ItemList.msg
+[1.799s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/ament_index/resource_index/package_run_dependencies/auro_interfaces
+[1.800s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/ament_index/resource_index/parent_prefix_path/auro_interfaces
+[1.800s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/environment/ament_prefix_path.sh
+[1.800s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/environment/ament_prefix_path.dsv
+[1.800s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/environment/path.sh
+[1.801s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/environment/path.dsv
+[1.801s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/local_setup.bash
+[1.801s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/local_setup.sh
+[1.801s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/local_setup.zsh
+[1.801s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/local_setup.dsv
+[1.801s] -- Symlinking: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/package.dsv
+[1.807s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/ament_index/resource_index/packages/auro_interfaces
+[1.807s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.807s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.808s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.808s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.808s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.808s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.808s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.808s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfacesConfig.cmake
+[1.809s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfacesConfig-version.cmake
+[1.809s] -- Up-to-date symlink: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/package.xml
+[1.809s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/lib/libauro_interfaces__rosidl_generator_c.so
+[1.809s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.810s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.810s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_introspection_c.so
+[1.810s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_c.so
+[1.810s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.811s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_cpp.so
+[1.838s] Listing '/home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces'...
+[1.838s] Listing '/home/baguette/Documents/src/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg'...
+[1.841s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/lib/libauro_interfaces__rosidl_generator_py.so
+[1.841s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_generator_cExport.cmake
+[1.842s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.842s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.843s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.843s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_generator_cppExport.cmake
+[1.843s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.843s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.843s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.844s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.844s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_cExport.cmake
+[1.844s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.844s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.845s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.845s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_cppExport.cmake
+[1.845s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.845s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_generator_pyExport.cmake
+[1.845s] -- Up-to-date: /home/baguette/Documents/src/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.968s] Invoked command in '/home/baguette/Documents/src/build/auro_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/baguette/Documents/src/install/tf_transformations:/home/baguette/Documents/src/install/tf_relay:/home/baguette/Documents/src/install/solution:/home/baguette/Documents/src/install/assessment:/opt/ros/humble /usr/bin/cmake --install /home/baguette/Documents/src/build/auro_interfaces
