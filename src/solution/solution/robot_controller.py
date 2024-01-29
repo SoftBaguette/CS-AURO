@@ -85,7 +85,7 @@ class RobotController(Node):
         self.goal.pose.orientation.w = 1.0
         self.navigator.setInitialPose(self.goal)
         
-
+        # Subscribes to ItemList messages published on /items topic
         self.item_subscriber = self.create_subscription(
             ItemList,
             'items',
@@ -118,10 +118,11 @@ class RobotController(Node):
         # Publishes Twist messages (linear and angular velocities) on the /cmd_vel topic
         self.cmd_vel_publisher = self.create_publisher(Twist, 'cmd_vel', 10)
 
-
+    # Callback function for ItemList messages
     def item_callback(self, msg):
         self.items = msg
         
+    # Callback function for ItemHolder messages    
     def item_holder_callback(self, msg):
         self.item_holder = msg
         try:
@@ -132,7 +133,7 @@ class RobotController(Node):
         except:
             pass
         
-
+    # Callback function for Odometry messages
     def odom_callback(self, msg):
         self.pose = msg.pose.pose # Store the pose in a class variable
 
@@ -144,6 +145,7 @@ class RobotController(Node):
         
         self.yaw = yaw # Store the yaw in a class variable
 
+    # Callback function for LaserScan messages
     def scan_callback(self, msg):
         # Group scan ranges into 4 segments
         front_ranges = msg.ranges[331:359] + msg.ranges[0:30]
