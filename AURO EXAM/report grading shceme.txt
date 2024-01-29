@@ -1,0 +1,172 @@
+Design [8 marks]
+
+Mark:
+0-29%
+
+No description of design, or very little detail given
+No diagram
+30-39%
+
+Limited design that is insufficiently described and justified
+No diagram, or diagram that fails to communicate the design of the system
+40-49%
+
+Limited design that is sufficiently described and justified
+Diagram partially communicates the design of the system
+50-59%
+
+Appropriate design that is sufficiently described and justified
+Diagram adequately communicates the design of the system
+60-69%
+
+Good design that is well-described and justified
+Diagram clearly communicates the design of the system
+70-79%
+
+Well-formulated design that is well-described and justified
+Diagram comprehensively communicates the design of the system
+80-100%
+
+Excellent design that is well-described and thoroughly justified
+Outstanding diagram that comprehensively communicates the design of the system
+
+Implementation [7 marks]
+
+Mark:
+0-29%
+No description of implementation, or very little detail given
+No diagram
+
+30-39%
+No diagram, or diagram that fails to communicate the implementation of autonomy
+Implementation is insufficiently described and justified, and fails to demonstrate an understanding of ROS
+
+40-49%
+Diagram partially communicates the implementation of autonomy
+Implementation is sufficiently described and justified, and demonstrates a limited understanding of ROS
+
+50-59%
+Diagram adequately communicates the implementation of autonomy
+Implementation is sufficiently described and justified, and demonstrates an understanding of ROS
+
+60-69%
+Diagram clearly communicates the implementation of autonomy
+Implementation is well-described and justified, and demonstrates a good understanding of ROS
+
+70-79%
+Diagram comprehensively communicates the implementation of autonomy
+Implementation is well-described and justified, and demonstrates a strong understanding of ROS
+
+80-100%
+Outstanding diagram that comprehensively communicates the implementation of autonomy
+Implementation is well-described and thoroughly justified, and demonstrates a comprehensive understanding of ROS
+
+Analysis [10 marks]
+
+Mark:
+0-29%
+
+No analysis, or very little detail given
+No description of experimental approach, or very little detail given
+30-39%
+
+Limited analysis that is exclusively qualitative
+Limited experimental approach that is insufficiently justified and described
+40-49%
+
+Sufficient analysis that is exclusively qualitative
+Limited experimental approach that is sufficiently justified and described
+50-59%
+
+Sufficient analysis that is both qualitative and quantitative
+Appropriate experimental approach that is sufficiently justified and described
+60-69%
+
+Good analysis that is both qualitative and quantitative
+Good experimental approach that is both qualitative and quantitative
+70-79%
+
+Insightful analysis that is both qualitative and quantitative
+Insightful experimental approach that is both qualitative and quantitative
+80-100%
+
+Insightful and thorough analysis that is both qualitative and quantitative
+Rigorous experimental approach that is well-described and thoroughly justified
+
+Evaluation [10 marks]
+
+Mark:
+0-29%
+
+No discussion of strengths and weaknesses, or very limited detail given
+No discussion of how well the solution would transfer from simulation to reality
+30-39%
+
+Limited discussion of strengths and weaknesses, and does not relate to the solution
+Demonstrates a lack of understanding of how well the solution would transfer from simulation to reality
+40-49%
+
+Sufficient discussion of the strengths and weaknesses of the solution
+Demonstrates a limited understanding of how well the solution would transfer from simulation to reality
+50-59%
+
+Good discussion of the strengths and weaknesses of the solution
+Demonstrates an understanding of how well the solution would transfer from simulation to reality
+60-69%
+
+Insightful discussion of the strengths and weaknesses of the solution
+Demonstrates a good understanding of how well the solution would transfer from simulation to reality
+70-79%
+
+Insightful and thorough discussion of the strengths and weaknesses of the solution
+Demonstrates a detailed understanding of how well the solution would transfer from simulation to reality
+80-100%
+
+Insightful and thorough discussion of the strengths and weaknesses of the solution
+Demonstrates a comprehensive understanding of how well the solution would transfer from simulation to reality
+
+Presentation [5 marks]
+
+Mark:
+0-29%
+
+Template not used
+No structure, or very disjointed
+No figures, or illegible figures
+Any references are incorrectly formatted, or not cited
+30-39%
+
+Template used with major deviations
+Poorly structured and disjointed
+Figures are illegible or of poor quality
+References are incorrectly formatted and not cited
+40-49%
+
+Template used with moderate deviations
+Sufficiently structured, but disjointed
+Figures are legible and of acceptable quality, but may not include captions
+Some references are incorrectly formatted or not cited
+50-59%
+
+Template used with minor deviations
+Appropriately structured, with mostly logical flow
+Figures are of good quality, but may not include captions
+Some references are incorrectly formatted or incorrectly cited
+60-69%
+
+Template used with very minor deviations
+Good structure, with logical flow
+Figures are of good quality and include captions
+Most references are correctly formatted and correctly cited
+70-79%
+
+Template used with no deviations
+Well-structured, with clear and logical flow
+Figures are of high quality and clearly captioned
+Most references are correctly formatted and correctly cited
+80-100%
+
+Template used with no deviations
+Well-structured, with clear narrative and logical flow
+Figures are of excellent quality and descriptively captioned
+All references are correctly formatted and correctly cited

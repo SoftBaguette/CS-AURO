@@ -1,0 +1,104 @@
+ Sophistication [12 marks]
+
+Mark:
+0-29%
+
+Single-robot system that fails to address any part of the task
+30-39%
+
+Single-robot system that fails to address some parts of the task
+40-49%
+
+Single-robot system that sufficiently addresses all parts of the task
+50-59%
+
+Single-robot system that efficiently addresses all parts of the task, or multi-robot system that sufficiently addresses all parts of the task
+60-69%
+
+Single-robot system that intelligently addresses all parts of the task, or multi-robot system that efficiently addresses all parts of the task
+70-79%
+
+Multi-robot system that intelligently addresses all parts of the task
+80-100%
+
+Multi-robot system that intelligently and creatively addresses all parts of the task
+System architecture [12 marks]
+
+Mark:
+0-29%
+
+Monolithic architecture with inappropriate use of interfaces
+30-39%
+
+Monolithic architecture with limited use of interfaces
+40-49%
+
+Monolithic architecture with appropriate use of interfaces
+50-59%
+
+Modular architecture with limited use of interfaces
+60-69%
+
+Modular architecture with appropriate use of interfaces
+70-79%
+
+Modular architecture that separates functionality into reusable components, with appropriate use of interfaces
+80-100%
+
+Modular architecture that separates functionality into reusable components, with considered use of interfaces
+Use of ROS concepts [8 marks]
+
+Mark:
+0-29%
+
+Demonstrates a misunderstanding of ROS concepts
+30-39%
+
+Demonstrates a very limited understanding of ROS concepts
+40-49%
+
+Demonstrates a limited understanding of ROS concepts
+50-59%
+
+Demonstrates an understanding of ROS concepts
+60-69%
+
+Demonstrates a good understanding of ROS concepts
+70-79%
+
+Demonstrates a strong understanding of ROS concepts
+80-100%
+
+Demonstrates a comprehensive understanding of ROS concepts
+
+Understandability [8 marks]
+
+Mark:
+0-29%
+
+Poorly structured code with unsuitable naming and no comments
+No README submitted
+30-39%
+
+Poorly structured code with unsuitable naming and limited comments
+README provides insufficient instructions on how to run the code
+40-49%
+
+Sufficiently structured code with suitable naming and limited comments
+README provides sufficient instructions on how to run the code
+50-59%
+
+Sufficiently structured code with suitable naming and comments where appropriate
+README provides sufficient instructions on how to run the code
+60-69%
+
+Sufficiently structured code with descriptive naming and comments where appropriate
+README provides sufficient instructions on how to run the code
+70-79%
+
+Well-structured code with descriptive naming and comments where appropriate
+README provides detailed instructions on how to run the code
+80-100%
+
+Exceptionally well-structured code with descriptive naming and comments where appropriate
+README provides comprehensive instructions on how to run the code

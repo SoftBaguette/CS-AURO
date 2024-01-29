@@ -1,0 +1,18 @@
+ 
+@startuml
+[*] --> FORWARD
+
+FORWARD --> TURNING : Obstacle detected / No items
+FORWARD --> COLLECTING : Item detected
+TURNING --> FORWARD : Turn completed
+COLLECTING --> FORWARD : No items in sight / Obstacle
+COLLECTING --> RETURNING : Item collected
+RETURNING --> TURNING : Obstacle while returning
+RETURNING --> FORWARD : Item delivered
+
+note right of FORWARD : Robot moves forward\nDefault state
+note right of TURNING : Robot turns in place\nDirection and angle based on obstacles or random
+note right of COLLECTING : Robot collects items\nTransitions when item detected
+note right of RETURNING : Robot returns collected item\nNavigates back to start
+
+@enduml

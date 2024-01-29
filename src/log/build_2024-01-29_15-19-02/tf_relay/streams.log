@@ -1,0 +1,20 @@
+[1.623s] Invoking command in '/home/baguette/Documents/src/build/tf_relay': PYTHONPATH=/home/baguette/Documents/src/build/tf_relay/prefix_override:/home/baguette/Documents/src/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/baguette/Documents/src/build/tf_relay/build --no-deps install_data
+[1.884s] running develop
+[1.884s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.885s]   warnings.warn(
+[1.885s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.885s]   warnings.warn(
+[2.049s] running egg_info
+[2.049s] writing tf_relay.egg-info/PKG-INFO
+[2.049s] writing dependency_links to tf_relay.egg-info/dependency_links.txt
+[2.049s] writing entry points to tf_relay.egg-info/entry_points.txt
+[2.049s] writing requirements to tf_relay.egg-info/requires.txt
+[2.049s] writing top-level names to tf_relay.egg-info/top_level.txt
+[2.051s] reading manifest file 'tf_relay.egg-info/SOURCES.txt'
+[2.052s] writing manifest file 'tf_relay.egg-info/SOURCES.txt'
+[2.053s] running build_ext
+[2.053s] Creating /home/baguette/Documents/src/install/tf_relay/lib/python3.10/site-packages/tf-relay.egg-link (link to .)
+[2.054s] Installing relay script to /home/baguette/Documents/src/install/tf_relay/lib/tf_relay
+[2.054s] 
+[2.054s] Installed /home/baguette/Documents/src/build/tf_relay
+[2.055s] running install_data

@@ -1,0 +1,58 @@
+ @startuml
+!define RECTANGLE class
+
+RECTANGLE RobotController {
+    .. Subscribers ..
+    + Odometry (/odom)
+    + LaserScan (/scan)
+    + ItemList ('/items')
+    + ItemHolders ('/item_holders')
+    .. Publishers ..
+    + Twist (/cmd_vel)
+    .. Components ..
+    + Navigator (nav2_simple_commander)
+    + State Machine (FORWARD, TURNING, COLLECTING, RETURNING)
+    + Sensor Processing
+    + Movement Control
+    .. Methods ..
+    + control_loop()
+    + odom_callback()
+    + scan_callback()
+    + item_callback()
+    + item_holder_callback()
+}
+
+note right of RobotController : Central node implementing\nthe robot's control logic
+
+RECTANGLE ExternalROS2Components {
+    + /odom (Odometry Topic)
+    + /scan (LaserScan Topic)
+    + /items (ItemList Topic)
+    + /item_holders (ItemHolders Topic)
+    + /cmd_vel (Twist Topic)
+}
+
+RECTANGLE HardwareInterfaces {
+    + LiDAR Sensor
+    + Odometry Sensor
+    + Actuators
+}
+
+RECTANGLE ExternalSystems {
+    + Central Monitoring System
+    + Navigation System
+}
+
+RobotController ..> "publishes to" : /cmd_vel
+RobotController ..> "subscribes to" : /odom
+RobotController ..> "subscribes to" : /scan
+RobotController ..> "subscribes to" : /items
+RobotController ..> "subscribes to" : /item_holders
+
+ExternalROS2Components -- RobotController
+HardwareInterfaces -- RobotController
+ExternalSystems -- RobotController
+
+@enduml
+
+https://www.planttext.com/
